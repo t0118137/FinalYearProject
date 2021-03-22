@@ -1,0 +1,123 @@
+<style>
+un
+{ 
+  text-decoration: underline;  /* Place line under the text */
+}
+h1
+{
+  font-family: Times New Roman;  /* Add font style */
+  font-size: 40px;   /* Increase font size */
+  color: white;  /* Text color */
+  text-align:center;  /* Place text in the center */
+}
+p
+{
+  font-family: Times New Roman;  /* Add font style */
+}
+body
+{
+  background-color: #ece5dd;  /* Set a background color */
+  background-position: center;  /* Set background picture in the center */
+  background-size: cover;  /* Cover the whole background */
+  background-repeat: no-repeat;  /* None-repeating background */
+}
+.topbar 
+{
+  background-color: #4CAF50;
+  overflow: hidden;
+}
+.topbar a 
+{
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  font-size: 17px;
+}
+.topbar .icon 
+{
+  display: none;
+}
+@media screen and (max-width: 950px) 
+{
+  .topbar a:not(:first-child) 
+  {
+    display: none;
+  }
+  .topbar a.icon 
+  {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 950px) 
+{
+  .topbar.responsive 
+  {
+    position: relative;
+    }
+  .topbar.responsive a.icon 
+  {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topbar.responsive a 
+  {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+footer
+{	
+	background-color:black;
+  position: fixed;
+  bottom: 0px;
+	left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}
+button
+{
+  text-align: center;  /* Text align at center */
+  border: none;  /* No border */
+  padding: 16px 32px;  /* Padding for button */
+  text-align: center;  /* Text align at center */
+  font-size: 16px;  /* Add font style */
+  margin: 4px 2px;  /* Margin for button */
+  opacity: 0.7;  /* Set opacity */
+  cursor: pointer;
+}
+button:hover
+{
+  opacity: 1  /* Set opacity */
+}
+.homeSlides 
+{
+  display: none;
+}
+/* Slideshow container */
+.slideshowContainer
+{
+  position: relative;
+  margin: auto;
+}
+/* Fading animation */
+.fade 
+{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+@-webkit-keyframes fade 
+{
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+@keyframes fade 
+{
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+</style>

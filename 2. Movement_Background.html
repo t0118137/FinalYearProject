@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movement Background | Mental Health Measures HK</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="1. CSS StyleSheet/mainStylesheet.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+<!-- Logo -->
+<div><a href="index.html"><img border="0" src="2. Images/icon.png" width="350px" height="155px"></a></div>
+    
+<!-- Top bar -->
+<div class="topbar" id="Navtopbar">
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="1. About Us.html" class="w3-bar-item w3-button">About Us</a>
+    <a href="2. Movement_Background.html" class="w3-bar-item w3-button" style="color:#4CAF50; background-color: white;">Movement Background</a>
+    <a href="3. For_Teenagers.html" class="w3-bar-item w3-button">For Teenagers/Childs</a>
+    <a href="4. For_Adult.html" class="w3-bar-item w3-button">For Adults</a>
+    <a href="5. Online_Test.html" class="w3-bar-item w3-button">Online Testing</a>
+    <a href="javascript:void(0);" class="icon w3-right-align" onclick="topbarToNav()">
+    <img src="2. Images/nav_Icon.png" style="width:20px">
+    </a>
+</div><br><br>
+
+<!-- Footer -->
+<br><br><br><br><br><br><br>
+<footer>
+ <div class="w3-row"> 
+ <div class="w3-rest w3-bar w3-black">
+  <p style="color:white;text-align:center;">
+    &nbsp;<un>Student Number : T0118137</un> &nbsp;&nbsp;&nbsp; 
+	<un>University Email : T0118137@my.ntu.ac.uk</un> &nbsp;&nbsp;&nbsp; 
+	<un>Personal Email : 9LDSKING@gmail.com</un>
+  </p>
+ </div></div>
+<div style="color:yellow">&copy; Copyright Ho Hin Ng Percy</div>
+</footer>
+
+<!-- JavaScript -->
+<script>
+// function for navbar
+function topbarToNav() 
+{
+  var n = document.getElementById("Navtopbar");
+  if (n.className === "topbar") 
+  {
+    n.className += " responsive";
+  } 
+  else 
+  {
+    n.className = "topbar";
+  }
+}
+</script>
