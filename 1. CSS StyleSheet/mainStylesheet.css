@@ -1,43 +1,256 @@
-<style>
-un
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap');
+/* Underline feature */
+.un
 { 
-  text-decoration: underline;  /* Place line under the text */
+  text-decoration: underline;
 }
-h1
-{
-  font-family: Times New Roman;  /* Add font style */
-  font-size: 40px;   /* Increase font size */
-  color: white;  /* Text color */
-  text-align:center;  /* Place text in the center */
-}
-p
-{
-  font-family: Times New Roman;  /* Add font style */
-}
+/* Main Body styling */
 body
 {
-  background-color: #ece5dd;  /* Set a background color */
-  background-position: center;  /* Set background picture in the center */
-  background-size: cover;  /* Cover the whole background */
-  background-repeat: no-repeat;  /* None-repeating background */
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #ece5dd;
+  font-family: 'Lexend', sans-serif;
+  min-height: 100%;
+  height: 100%;
 }
+/* Vertical Timeline style */
+.verTimeline
+{
+  position: absolute;
+  margin: 50px auto;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+/* Vertical line */
+.verTimeline:before
+{
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  top: -80px;
+  height: 101%;
+  background: #000000;
+}
+/* Timeline ul style */
+.verTimeline ul
+{
+  margin: 0;
+  padding: 0;
+}
+/* Timeline ul li style */
+.verTimeline ul li
+{
+  list-style: none;
+  position: relative;
+  width: 50%;
+  margin: default;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+/* Timeline ul li p content style */
+.verTimeline ul li p
+{
+  margin: 10px 0 0;
+  padding: 10px 0;
+}
+/* Timeline ul li h2 content style */
+.verTimeline ul li h2
+{
+  margin: 0;
+  padding: 0;
+}
+/* Timeline ul li left side text style */
+.verTimeline ul li:nth-child(odd)
+{
+  float:left;
+  text-align: left;
+  clear: both;
+}
+/* Timeline ul li right side text style */
+.verTimeline ul li:nth-child(even)
+{
+  float:right;
+  text-align: left;
+  clear: both;
+}
+/* Timeline ul li left side circle point */
+.verTimeline ul li:nth-child(odd):before
+{
+  content:'';
+  position: absolute;
+  top: 38px;
+  right: -6px;
+  width: 10px;
+  height: 10px;
+  background: #FFFF00;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #000000;
+}
+/* Timeline ul li right side circle point */
+.verTimeline ul li:nth-child(even):before
+{
+  content:'';
+  position: absolute;
+  top: 38px;
+  left: -4px;
+  width: 10px;
+  height: 10px;
+  background: #FFFF00;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #000000;
+}
+.verTimeline ul li .event
+{
+  margin: 2px 4px;
+  padding: 14px 28px;
+  background: #FFFFFF;
+}
+/* Timeline ul li left side date style (float right) */
+.verTimeline ul li:nth-child(odd) .date
+{
+  position: absolute;
+  top: 13px;
+  right: -175px;
+  margin: 0;
+  padding: 0 6px;
+  background: #00bfb6;
+  color: #FFFFFF;
+  border-radius: 14px;
+}
+/* Timeline ul li right side date style (float left) */
+.verTimeline ul li:nth-child(even) .date
+{
+  position: absolute;
+  top: 13px;
+  left: -175px;
+  margin: 0;
+  padding: 0 6px;
+  background: #00bfb6;
+  color: #FFFFFF;
+  border-radius: 14px;
+}
+.verTimeline ul li:nth-child(odd) .date:before
+{
+  content:"";
+  position: absolute;
+  right: 100%;
+  top: 16px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 26px solid #00bfb6;
+  border-bottom: 13px solid transparent;
+}
+.verTimeline ul li:nth-child(even) .date:before
+{
+  content:"";
+  position: absolute;
+  left: 100%;
+  top: 16px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-left: 26px solid #00bfb6;
+  border-bottom: 13px solid transparent;
+}
+/* Timeline media screen with max width of 1000px */
+@media screen and (max-width: 1000px) 
+{
+  .verTimeline
+  {
+    width: 100%;
+  }
+}
+/* Timeline media screen with max width of 750px */
+/* For responsive screen */
+@media screen and (max-width: 750px) 
+{
+  .verTimeline
+  {
+    width: 100%;
+  }
+  .verTimeline:before
+  {
+    left: 20px;
+  }
+  .verTimeline li:nth-child(odd)
+  {
+    width: 100%;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+  }
+  .verTimeline li:nth-child(even)
+  {
+    width: 100%;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+  }
+  .verTimeline ul li:nth-child(odd):before
+  {
+    top: -18px;
+    left: 16px;
+  }
+  .verTimeline ul li:nth-child(even):before
+  {
+    top: -18px;
+    left: 16px;
+  }
+  .verTimeline ul li:nth-child(odd) .date
+  {
+    top: -40px;
+    left: 60px;
+    right: inherit;
+  }
+  .verTimeline ul li:nth-child(even) .date
+  {
+    top: -40px;
+    left: 60px;
+  }
+  .verTimeline ul li:nth-child(even) .date:before
+  {
+    display: none;
+  }
+  .verTimeline ul li:nth-child(even) .date:after
+  {
+    content:"";
+    position: absolute;
+    right: 100%;
+    top: 16px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 26px solid #00bfb6;
+    border-bottom: 13px solid transparent;
+  }
+}
+/* Topbar style */
 .topbar 
 {
+  position: relative;
   background-color: #4CAF50;
   overflow: hidden;
 }
+/* Topbar text style */
 .topbar a 
 {
+  position: relative;
   float: left;
   color: white;
   padding: 14px 16px;
   font-size: 17px;
 }
+/* Topbar menu icon */
 .topbar .icon 
 {
   display: none;
 }
-@media screen and (max-width: 950px) 
+/* Topbar media screen with max width of 1000px */
+@media screen and (max-width: 1000px) 
 {
   .topbar a:not(:first-child) 
   {
@@ -49,12 +262,13 @@ body
     display: block;
   }
 }
-@media screen and (max-width: 950px) 
+/* Topbar media screen with responsive max width of 1000px */
+@media screen and (max-width: 1000px) 
 {
   .topbar.responsive 
   {
     position: relative;
-    }
+  }
   .topbar.responsive a.icon 
   {
     position: absolute;
@@ -68,6 +282,7 @@ body
     text-align: left;
   }
 }
+/* Footer styling */
 footer
 {	
 	background-color:black;
@@ -77,21 +292,24 @@ footer
   right: 0px;
   margin-bottom: 0px;
 }
+/* General button styling */
 button
 {
-  text-align: center;  /* Text align at center */
-  border: none;  /* No border */
-  padding: 16px 32px;  /* Padding for button */
-  text-align: center;  /* Text align at center */
-  font-size: 16px;  /* Add font style */
-  margin: 4px 2px;  /* Margin for button */
-  opacity: 0.7;  /* Set opacity */
+  text-align: center;
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.7;
   cursor: pointer;
 }
+/* General button styling */
 button:hover
 {
-  opacity: 1  /* Set opacity */
+  opacity: 1
 }
+/* Slideshow container */
 .homeSlides 
 {
   display: none;
@@ -120,4 +338,3 @@ button:hover
   from {opacity: .5} 
   to {opacity: 1}
 }
-</style>
