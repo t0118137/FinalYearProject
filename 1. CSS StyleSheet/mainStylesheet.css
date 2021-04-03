@@ -338,3 +338,11 @@ button:hover
   from {opacity: .5} 
   to {opacity: 1}
 }
+.movementPics
+{
+  margin: 10px 0 0;
+  padding: 10px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
