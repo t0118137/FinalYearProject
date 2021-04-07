@@ -10,7 +10,7 @@ body
   position: relative;
   margin: 0;
   padding: 0;
-  background-image: url('2. Images/wallpaper.png');
+  background-image: url('../2. Images/wallpaper.png');
   background-color: #ece5dd;
   font-family: 'Lexend', sans-serif;
   min-height: 100%;
