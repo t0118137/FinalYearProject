@@ -10,6 +10,7 @@ body
   position: relative;
   margin: 0;
   padding: 0;
+  background-image: url('../2. Images/wallpaper.png');
   background-color: #ece5dd;
   font-family: 'Lexend', sans-serif;
   min-height: 100%;
@@ -284,7 +285,7 @@ body
 }
 /* Footer styling */
 footer
-{	
+{
 	background-color:black;
   position: fixed;
   bottom: 0px;
@@ -345,4 +346,94 @@ button:hover
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.advice
+{
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.advice .category
+{
+  position: relative;
+  width: 280px;
+  height: 600px;
+  background: #FFFFFF;
+  margin: 16px 20px;
+  padding: 80px 20px;
+  box-shadow: 0 0 0 .1px #000000;
+}
+.advice .category:before
+{
+  content: '';
+  position: absolute;
+  background: #00bfb6;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.7s;
+}
+.advice .category:hover:before
+{
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.3s;
+}
+.advice .category h2
+{
+  text-decoration: underline;
+  position: absolute;
+  font-size: 32px;
+  font-weight: 500;
+  top: 30px;
+  opacity: 0.2;
+  transition: 0.5s;
+}
+.advice .category:hover h2
+{
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 700;
+  opacity: 1;
+  color: #FFFFFF;
+  transform: translateY(-20px);
+}
+.advice .category p
+{
+  font-size: 16px;
+  position: relative;
+  color: #000000;
+  transition: 0.7s;
+}
+.advice .category:hover p
+{
+  color: #FFFFFF;
+}
+.btnArea
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnArea .testBtn
+{
+  font-size: 18px;
+  background-color: #00bfb6;
+  color: #FFFFFF;
+  padding: 16px;
+  margin: 20px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+.btnArea .testBtn:hover
+{
+  font-size: 28px;
+  background-color: #00bfb6;
+  opacity: 1;
 }
