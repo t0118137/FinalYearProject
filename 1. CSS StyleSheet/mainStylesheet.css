@@ -420,6 +420,7 @@ button:hover
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .btnArea .testBtn
 {
@@ -436,4 +437,62 @@ button:hover
   font-size: 28px;
   background-color: #00bfb6;
   opacity: 1;
+}
+.colourBar
+{
+  content: '';
+  position: relative;
+  background-color: #00bfb6;
+  width: 100%;
+  height: 20px;
+}
+.onlineTestQuestion
+{
+  text-align: center;
+  font-size: 24px;
+  margin: 12px;
+  padding: 16px;
+}
+.onlineTestBtn
+{
+  height: 80px;
+  width: 200px;
+  font-size: 20px;
+  margin: 20px;
+  padding: 12px 16px;
+  color: #FFFFFF;
+  background-color: #00bfb6;
+  opacity: 0.7;
+}
+.onlineTestBtn:hover
+{
+  transition: 0.3s;
+  opacity: 1;
+}
+@media screen and (max-width:750px)
+{
+  .colourBar
+  {
+    width:100%;
+  }
+  .testQuestion
+  {
+    width:100%;
+  }
+  .testBtn
+  {
+    position: relative;
+  }
+}
+.changeBtn
+{
+  margin: 30px;
+  padding: 0 22px;
+  text-align: center;
+  height: 50px;
+  width: 110px;
+  background-color: #FFBF00; 
+  color: #000000;
+  opacity: 1;
+  border-radius: 10px;
 }

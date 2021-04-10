@@ -7,10 +7,137 @@
 <link rel="stylesheet" href="1. CSS StyleSheet/mainStylesheet.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
-
 <body>
-<!-- Logo -->
-<div><a href="index.html"><img border="0" src="2. Images/icon.png" width="350px" height="155px"></a></div>
 
+<!-- Logo -->
+<div><a href="index.html" target="_blank"><img border="0" src="2. Images/icon.png" width="350px" height="155px"></a></div>
+
+<div class="colourBar"></div>
+
+<!-- Question 1 -->
+<div class="onlineTestSlide">
+    <div class="onlineTestQuestion">
+        1. If you have to rate yourself, how deep do you think you have participated in the movement?
+    </div>
+    
+    <div class="btnArea">
+        <button class="onlineTestBtn" id="onlineTestBtn1" onclick="setColor(1); change(+1);">A. 0 – 25%</button>
+        <button class="onlineTestBtn" id="onlineTestBtn2" onclick="setColor(2); change(+1);">B. 25 – 50%</button>
+        <button class="onlineTestBtn" id="onlineTestBtn3" onclick="setColor(3); change(+1);">C. 50 – 75%</button>
+        <button class="onlineTestBtn" id="onlineTestBtn4" onclick="setColor(4); change(+1);">D. 75 – 100%</button>
+    </div><br>
+
+    <button class="changeBtn" onclick="change(-1)">Previous</button>
+    <button class="changeBtn" onclick="change(+1)">Next</button>
+    <br><br>
+</div>
+
+<!-- Question 2 -->
+<div class="onlineTestSlide">
+    <div class="onlineTestQuestion">
+        2. Have you ever experienced any kinds of police brutality (e.g. Pepper sprayed, got beaten)?
+    </div>
+    
+    <div class="btnArea">
+        <button class="onlineTestBtn" id="onlineTestBtn5" onclick="setColor(5); change(+1);">A. Yes</button>
+        <button class="onlineTestBtn" id="onlineTestBtn6" onclick="setColor(6); change(+1);">B. No</button>
+    </div><br>
+
+    <button class="changeBtn" onclick="change(-1)">Previous</button>
+    <button class="changeBtn" onclick="change(+1)">Next</button>
+    <br><br>
+</div>
+
+
+<div class="colourBar"></div>
+
+<br><br><br><br><br><br><br>
+<footer>
+    <div class="w3-row"> 
+    <div class="w3-rest w3-bar w3-black">
+     <p style="color:white;text-align:center;">
+       &nbsp;<un>Student Number : T0118137</un> &nbsp;&nbsp;&nbsp; 
+       <un>University Email : T0118137@my.ntu.ac.uk</un> &nbsp;&nbsp;&nbsp; 
+       <un>Personal Email : 9LDSKING@gmail.com</un>
+     </p>
+    </div></div>
+    <div style="color:yellow">&copy; Copyright Ho Hin Ng Percy</div>
+</footer>
+
+
+<script>
+// Change other buttons' color when one of them is clicked
+function setColor(item)
+{
+    var item;
+    // First Question
+    if(item == 1)
+    {
+        document.getElementById("onlineTestBtn1").style.background="#4CAF50";
+        document.getElementById("onlineTestBtn2").style.background="#00bfb6";
+        document.getElementById("onlineTestBtn3").style.background="#00bfb6";
+        document.getElementById("onlineTestBtn4").style.background="#00bfb6";
+    }
+    else if(item == 2)
+    {
+        document.getElementById("onlineTestBtn1").style.background="#00bfb6";
+        document.getElementById("onlineTestBtn2").style.background="#4CAF50";
+        document.getElementById("onlineTestBtn3").style.background="#00bfb6";
+        document.getElementById("onlineTestBtn4").style.background="#00bfb6";
+    }
+    else if(item == 3)
+    {
+        document.getElementById("onlineTestBtn1").style.background="#00bfb6";
+        document.getElementById("onlineTestBtn2").style.background="#00bfb6";
+        document.getElementById("onlineTestBtn3").style.background="#4CAF50";
+        document.getElementById("onlineTestBtn4").style.background="#00bfb6";
+    }
+    else if(item == 4)
+    {
+        document.getElementById("onlineTestBtn1").style.background="#00bfb6";
+        document.getElementById("onlineTestBtn2").style.background="#00bfb6";
+        document.getElementById("onlineTestBtn3").style.background="#00bfb6";
+        document.getElementById("onlineTestBtn4").style.background="#4CAF50";
+    }
+    // Second Question
+    else if(item == 5)
+    {
+        document.getElementById("onlineTestBtn5").style.background="#4CAF50";
+        document.getElementById("onlineTestBtn6").style.background="#00bfb6";
+    }
+    else if(item == 6)
+    {
+        document.getElementById("onlineTestBtn5").style.background="#00bfb6";
+        document.getElementById("onlineTestBtn6").style.background="#4CAF50";
+    }
+}
+</script>
+
+<script>
+//Set variable of slidenumber as 1
+var slidenumber = 1;
+showDivs(slidenumber);
+
+function change(n)
+{
+    showDivs(slidenumber += n);
+}
+
+//Function of showDivs with Pslides
+function showDivs(n) 
+{
+  var i;
+  var x = document.getElementsByClassName("onlineTestSlide");
+  if (n > x.length) {slidenumber = 1}    
+  if (n < 1) {slidenumber = x.length};
+  for (i = 0; i < x.length; i++) 
+  {
+     //For Hidden slides
+     x[i].style.display = "none";  
+  }
+  //For Visible slides
+  x[slidenumber-1].style.display = "block";  
+}
+</script>
 </body>
 </html>
