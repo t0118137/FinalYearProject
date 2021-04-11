@@ -484,15 +484,32 @@ button:hover
     position: relative;
   }
 }
-.changeBtn
+.nextBtn
 {
+  position: absolute;
+  right: 30px;
+  display: none;
   margin: 30px;
   padding: 0 22px;
   text-align: center;
   height: 50px;
   width: 110px;
-  background-color: #FFBF00; 
-  color: #000000;
+  background-color: #4CAF50; 
+  color: #FFFFFF;
   opacity: 1;
-  border-radius: 10px;
+  border-radius: 40px;
+}
+.prevBtn
+{
+  position: absolute;
+  left: 30px;
+  margin: 30px;
+  padding: 0 22px;
+  text-align: center;
+  height: 50px;
+  width: 110px;
+  background-color: #4CAF50; 
+  color: #FFFFFF;
+  opacity: 1;
+  border-radius: 40px;
 }
