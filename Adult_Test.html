@@ -15,7 +15,7 @@
 <div class="colourBar"></div>
 
 <!-- Question 1 -->
-<div class="onlineTestSlide">
+<div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
         1. If you have to rate yourself, how deep do you 
         think you have participated in the movement?
@@ -33,7 +33,7 @@
 </div>
 
 <!-- Question 2 -->
-<div class="onlineTestSlide">
+<div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
         2. Have you ever experienced any kinds of police 
         brutality (e.g. Pepper sprayed, got beaten)?
@@ -50,7 +50,7 @@
 </div>
 
 <!-- Question 3 -->
-<div class="onlineTestSlide">
+<div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
         3. Which kind of mental health issue below is the 
         most likely you think you might have?
@@ -69,7 +69,7 @@
 </div>
 
 <!-- Question 4 -->
-<div class="onlineTestSlide">
+<div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
         4. Based on the Question 3), how serious do you think 
         that mental health issue is affecting your daily life 
@@ -89,7 +89,7 @@
 </div>
 
 <!-- Question 5 -->
-<div class="onlineTestSlide">
+<div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
         5. Which negative feeling below you have ever 
         experienced during the 2019 movement? 
@@ -110,7 +110,7 @@
 
 <!-- Question 6 -->
 <!-- Anxiety's symptom -->
-<div class="onlineTestSlide">
+<div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
         6. Do you agree that you have difficulties with sleep? 
         Such as waking up early or hard to stay asleep.
@@ -130,7 +130,7 @@
 
 <!-- Question 7 -->
 <!-- Depression's symptom -->
-<div class="onlineTestSlide">
+<div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
         7. Do you agree that you are feeling overwhelmingly sad at times?
     </div>
@@ -149,7 +149,7 @@
 
 <!-- Question 8 -->
 <!-- PTSD's symptom -->
-<div class="onlineTestSlide">
+<div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
         8. Do you agree that you are always upset because of the 
         experiences of police brutality?
@@ -169,7 +169,7 @@
 
 <!-- Question 9 -->
 <!-- Phobia's symptom -->
-<div class="onlineTestSlide">
+<div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
         9. Do you agree that you have panic attacks frequently?
     </div>
@@ -188,20 +188,21 @@
 
 <!-- Question 10 -->
 <!-- Summary Question -->
-<div class="onlineTestSlide">
+<div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
         10. Do you agree that the 2019 movement is the main reason of 
         your mental health disorder symptoms?
     </div>
     
     <div class="btnArea">
-        <button class="onlineTestBtn" id="onlineTestBtn10A" onclick="setColor(35); change(+1);">A. Totally agree</button>
-        <button class="onlineTestBtn" id="onlineTestBtn10B" onclick="setColor(36); change(+1);">B. Slightly agree</button>
-        <button class="onlineTestBtn" id="onlineTestBtn10C" onclick="setColor(37); change(+1);">C. Slightly disagree</button>
-        <button class="onlineTestBtn" id="onlineTestBtn10D" onclick="setColor(38); change(+1);">D. Totally disagree</button>
+        <button class="onlineTestBtn" id="onlineTestBtn10A" onclick="setColor(35);">A. Totally agree</button>
+        <button class="onlineTestBtn" id="onlineTestBtn10B" onclick="setColor(36);">B. Slightly agree</button>
+        <button class="onlineTestBtn" id="onlineTestBtn10C" onclick="setColor(37);">C. Slightly disagree</button>
+        <button class="onlineTestBtn" id="onlineTestBtn10D" onclick="setColor(38);">D. Totally disagree</button>
     </div><br>
 
     <button class="prevBtn" onclick="change(-1)">Previous</button>
+    <button class="submitBtn" id="submitBtn" onclick="submit()">Submit</button>
     <br><br>
 </div>
 
@@ -226,6 +227,7 @@
 // Change other buttons' color when one of them is clicked
 function setColor(item)
 {
+    var measureValue = 0;
     var item;
     var nextBtn1 = document.getElementById("nextBtn1");
     var nextBtn2 = document.getElementById("nextBtn2");
@@ -565,6 +567,7 @@ function setColor(item)
         document.getElementById("onlineTestBtn10B").style.background="#00bfb6";
         document.getElementById("onlineTestBtn10C").style.background="#00bfb6";
         document.getElementById("onlineTestBtn10D").style.background="#00bfb6";
+        submitBtn.style.display = "block";
     }
     // if Question 10's answer is B
     else if(item == 36)
@@ -573,6 +576,7 @@ function setColor(item)
         document.getElementById("onlineTestBtn10B").style.background="#FFBF00";
         document.getElementById("onlineTestBtn10C").style.background="#00bfb6";
         document.getElementById("onlineTestBtn10D").style.background="#00bfb6";
+        submitBtn.style.display = "block";
     }
     // if Question 10's answer is C
     else if(item == 37)
@@ -581,6 +585,7 @@ function setColor(item)
         document.getElementById("onlineTestBtn10B").style.background="#00bfb6";
         document.getElementById("onlineTestBtn10C").style.background="#FFBF00";
         document.getElementById("onlineTestBtn10D").style.background="#00bfb6";
+        submitBtn.style.display = "block";
     }
     // if Question 10's answer is D
     else if(item == 38)
@@ -589,12 +594,13 @@ function setColor(item)
         document.getElementById("onlineTestBtn10B").style.background="#00bfb6";
         document.getElementById("onlineTestBtn10C").style.background="#00bfb6";
         document.getElementById("onlineTestBtn10D").style.background="#FFBF00";
+        submitBtn.style.display = "block";
     }
 }
 </script>
 
 <script>
-//Set variable of slidenumber as 1
+// Set variable of slidenumber as 1
 var slidenumber = 1;
 showDivs(slidenumber);
 
@@ -603,7 +609,7 @@ function change(n)
     showDivs(slidenumber += n);
 }
 
-//Function of showDivs with onlineTestSlide
+// Function of showDivs with onlineTestSlide
 function showDivs(n) 
 {
   var i;
@@ -612,13 +618,37 @@ function showDivs(n)
   if (n < 1) {slidenumber = x.length};
   for (i = 0; i < x.length; i++) 
   {
-     //For Hidden slides
+     // For Hidden slides
      x[i].style.display = "none";  
   }
-  //For Visible slides
+  // For Visible slides
   x[slidenumber-1].style.display = "block";  
 }
 </script>
 
+<script>
+// Function of replacing the page with test result html
+// Confirm dialog for the user to submit answers
+function submit()
+{
+    var confirmDialog = "Are you sure to submit your answers?"
+    var c = confirm(confirmDialog);
+    if(c == true)
+    {
+        window.onbeforeunload = null;
+        location.replace("Test_Result.html")
+    }
+}
+</script>
+
+<script>
+// Function of sending alert to the user 
+// to prevent accidently close the browser
+window.onbeforeunload = function () 
+{
+    var alertMsg = "Your answers will not be saved, are you sure you are leaving?";
+    return alertMsg;
+}
+</script>
 </body>
 </html>

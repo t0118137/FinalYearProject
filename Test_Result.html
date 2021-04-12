@@ -12,5 +12,23 @@
 <!-- Logo -->
 <div><a href="index.html"><img border="0" src="2. Images/icon.png" width="350px" height="155px"></a></div>
 
+<div class="w3-center">
+    <div class="lds-roller" id="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+</div>
+
+<p class="resultContent" id="resultContent">Result:</p>
+
+<script>
+setTimeout(function() 
+{
+    $('#lds-roller').fadeOut('slow');
+}, 5000);
+
+setTimeout(function() 
+{
+    $('#resultContent').fadeIn('slow');
+}, 5500);
+</script>
+
 </body>
 </html>
