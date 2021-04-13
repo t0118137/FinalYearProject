@@ -16,7 +16,7 @@
     <div class="lds-roller" id="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
 </div>
 
-<p class="resultContent" id="resultContent">Result:</p>
+<p class="resultContent" id="resultContent"></p>
 
 <script>
 setTimeout(function() 
@@ -24,11 +24,14 @@ setTimeout(function()
     $('#lds-roller').fadeOut('slow');
 }, 5000);
 
-setTimeout(function() 
+/**setTimeout(function() 
 {
     $('#resultContent').fadeIn('slow');
-}, 5500);
+}, 5500);**/
 </script>
 
+<script>
+    document.getElementById('resultContent').innerHTML = "Your result is "+ localStorage["measureValue"] + "/40.";
+</script>
 </body>
 </html>
