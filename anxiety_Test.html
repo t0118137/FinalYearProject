@@ -217,6 +217,13 @@
     <div style="color:yellow">&copy; Copyright Ho Hin Ng Percy</div>
 </footer>
 
+<script>
+let measureValue = 40;
+localStorage.result = JSON.stringify(measureValue);
+let saved = JSON.parse(localStorage.result)
+log.textContent = saved === measureValue;
+</script>
+
 
 <script>
 // Change other buttons' color when one of them is clicked
@@ -237,15 +244,18 @@ function setColor(item)
     // if Question 1's answer is A
     if(item == 1)
     {
+        var itemNum = "1";
         document.getElementById("onlineTestBtn1A").style.background="#FFBF00";
         document.getElementById("onlineTestBtn1B").style.background="#00bfb6";
         document.getElementById("onlineTestBtn1C").style.background="#00bfb6";
         document.getElementById("onlineTestBtn1D").style.background="#00bfb6";
         nextBtn1.style.display = "block";
+        //localStorage.result = localStorage.result - 4;
     }
     // if Question 1's answer is B
     else if(item == 2)
     {
+        var itemNum = "2";
         document.getElementById("onlineTestBtn1A").style.background="#00bfb6";
         document.getElementById("onlineTestBtn1B").style.background="#FFBF00";
         document.getElementById("onlineTestBtn1C").style.background="#00bfb6";
@@ -608,8 +618,8 @@ function submit()
     if(c == true)
     {
         window.onbeforeunload = null;
-        location.href = "Test_Result.html";
-        //location.replace("Test_Result.html");
+        //location.href = "Test_Result.html";
+        location.replace("Test_Result.html");
     }
 }
 </script>

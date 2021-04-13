@@ -31,7 +31,9 @@ setTimeout(function()
 </script>
 
 <script>
-    document.getElementById('resultContent').innerHTML = "Your result is "+ localStorage["measureValue"] + "/40.";
+document.getElementById('resultContent').innerHTML = "Your result is " + localStorage.result + "/40.";
+window.localStorage.clear();
 </script>
+
 </body>
 </html>
