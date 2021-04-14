@@ -545,7 +545,7 @@ button:hover
 /* Test result loading animation */
 .lds-roller 
 {
-  margin: 100px;
+  margin: 120px;
   display: inline-block;
   position: relative;
   width: 80px;
@@ -649,7 +649,39 @@ button:hover
     transform: rotate(360deg);
   }
 }
-/*.resultContent
+.resultContent
 {
   display: none;
-}*/
+  margin-top: -10px;
+  font-size: 24px;
+}
+.detectIssue
+{
+  display: none;
+  font-weight: 600;
+  margin-top: -20px;
+  font-size: 30px;
+  text-decoration: underline;
+}
+.solution
+{
+  display: none;
+  margin-left: 50px;
+  padding: 20px 40px;
+  font-size: 18px;
+  text-align: left;
+}
+.solutionTitle
+{
+  font-size: 22px;
+  font-weight: 500;
+  color: #4CAF50;
+}
+/* Online Test screen styling */
+@media screen and (max-width:750px)
+{
+  .solution
+  {
+    margin-left: 20px;
+  }
+}

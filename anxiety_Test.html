@@ -199,6 +199,7 @@
     <div style="color:yellow">&copy; Copyright Ho Hin Ng Percy</div>
 </footer>
 
+<!-- JavaScript -->
 <script>
 // LocalStorage of the online test score
 let measureValue = 22;
@@ -206,7 +207,6 @@ localStorage.result = JSON.stringify(measureValue);
 let saved = JSON.parse(localStorage.result);
 log.textContent = saved === measureValue;
 </script>
-
 
 <script>
 // Change other buttons' color when one of them is clicked
@@ -303,6 +303,10 @@ function setColor(item)
         {
             localStorage.result = localStorage.result - 2;
         }
+        else if(localStorage == 22)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
         else
         {
             localStorage.result = localStorage.result - 0;
@@ -325,6 +329,10 @@ function setColor(item)
         nextBtn3.style.display = "block";
         // result value
         if(localStorage.result >= 17)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else if(localStorage == 22)
         {
             localStorage.result = localStorage.result - 2;
         }
@@ -353,6 +361,10 @@ function setColor(item)
         {
             localStorage.result = localStorage.result - 2;
         }
+        else if(localStorage == 22)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
         else
         {
             localStorage.result = localStorage.result - 0;
@@ -375,6 +387,10 @@ function setColor(item)
         nextBtn5.style.display = "block";
         // result value
         if(localStorage.result >= 13)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else if(localStorage == 22)
         {
             localStorage.result = localStorage.result - 2;
         }
@@ -403,9 +419,13 @@ function setColor(item)
         {
             localStorage.result = localStorage.result - 3;
         }
+        else if(localStorage == 22)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
         else
         {
-            localStorage.result = localStorage.result - 1;
+            localStorage.result = localStorage.result - 0;
         }
     }
     // if Question 6's answer is B
@@ -425,6 +445,10 @@ function setColor(item)
         nextBtn7.style.display = "block";
         // result value
         if(localStorage.result >= 8)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else if(localStorage == 22)
         {
             localStorage.result = localStorage.result - 2;
         }
@@ -453,6 +477,10 @@ function setColor(item)
         {
             localStorage.result = localStorage.result - 2;
         }
+        else if(localStorage == 22)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
         else
         {
             localStorage.result = localStorage.result - 0;
@@ -478,6 +506,10 @@ function setColor(item)
         {
             localStorage.result = localStorage.result - 2;
         }
+        else if(localStorage == 22)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
         else
         {
             localStorage.result = localStorage.result - 0;
@@ -500,6 +532,10 @@ function setColor(item)
         submitBtn.style.display = "block";
         // result value
         if(localStorage.result >= 2)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else if(localStorage == 22)
         {
             localStorage.result = localStorage.result - 2;
         }
@@ -555,8 +591,7 @@ function submit()
     if(c == true)
     {
         window.onbeforeunload = null;
-        //location.href = "Test_Result.html";
-        location.replace("Test_Result.html");
+        location.replace("anxiety_Test_Result.html");
     }
 }
 </script>
@@ -570,5 +605,6 @@ window.onbeforeunload = function ()
     return alertMsg;
 }
 </script>
+
 </body>
 </html>

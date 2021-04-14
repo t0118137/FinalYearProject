@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anxiety Test Result | Mental Health Measures HK</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="1. CSS StyleSheet/mainStylesheet.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+</head>
+
+<body>
+<!-- Logo -->
+<div><a href="index.html"><img border="0" src="2. Images/icon.png" width="350px" height="155px"></a></div>
+
+<!-- Top bar -->
+<div class="topbar" id="Navtopbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-hover-amber">Home</a>
+    <a href="5. Online_Test.html" class="w3-bar-item w3-button w3-hover-amber">Take another test</a>
+    <a class="w3-bar-item w3-button w3-hover-amber" id="downloadPDF">Download result</a>
+    <a href="javascript:void(0);" class="icon w3-right-align" onclick="topbarToNav()">
+      <img src="2. Images/nav_Icon.png" style="width:20px">
+    </a>
+  </div><br><br>
+
+<!-- Main Content of Testing Report -->
+<div class="testReport w3-center" id="testReport">
+    <div class="colourBar"></div>
+    <p style="font-size: 30px">You are diagnosed as: </p>
+    <!-- Loading screen -->
+    <div class="w3-center">
+        <div class="lds-roller" id="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+
+    <!-- Detected Issues -->
+    <p class="detectIssue" id="detectIssue1" style="color: #DC143C">Panic Level Anxiety</p>
+    <p class="detectIssue" id="detectIssue2" style="color: #FF8C00">Severe Anxiety</p>
+    <p class="detectIssue" id="detectIssue3" style="color: #1E90FF">Moderate Anxiety</p>
+    <p class="detectIssue" id="detectIssue4" style="color: #32CD32">Mild Anxiety</p>
+
+    <!-- Test Result -->
+    <p class="resultContent" id="resultContent"></p>
+
+    <!-- Solution Content -->
+    <!-- Panic Level Anxiety -->
+    <div class="solution" id="solution1">
+        <p class="solutionContent">
+            <p class="solutionTitle">Test Result 0 - 4: Panic Level Anxiety</p>
+            <p class="solutionTitle">Possible Symptoms:</p>
+            -	Rapid onset of extreme fear<br>
+            -	Heart palpitations<br>
+            -	Rapid breathing<br>
+            -	Nausea or dizziness<br>
+            <br>
+            <p class="solutionTitle">Suitable Treatments:</p>
+            -	Psychological Therapies<br>
+            -	Prescribed medication<br>
+            <br>
+            <p class="solutionTitle">Advices:</p>
+            Panic Level Anxiety could be really worst since 
+            it is the most severe anxiety disorder.<br>
+            We would recommend you to seek for professional help
+            as soon as possible.
+        </p>
+    </div>
+
+    <!-- Severe Anxiety -->
+    <div class="solution" id="solution2">
+        <p class="solutionContent">
+            <p class="solutionTitle">Test Result 5 - 10: Severe Anxiety</p>
+            <p class="solutionTitle">Possible Symptoms:</p>
+            -	Feeling nervous, restless or tense<br>
+            -	Feeling weak or tired<br>
+            -	Rapid breathing<br>
+            -	Excessive Worrying<br>
+            <br>
+            <p class="solutionTitle">Suitable Treatments:</p>
+            -	Psychological Therapies<br>
+            -	Prescribed medication<br>
+            <br>
+            <p class="solutionTitle">Advices:</p>
+            Severe Anxiety means the anxiety level is growing serious already.<br>
+            If you realise more anxiety symptoms are occurring on you,<br>
+            the faster you need some professional help.
+        </p>
+    </div>
+
+    <!-- Moderate Anxiety -->
+    <div class="solution" id="solution3">
+        <p class="solutionContent">
+            <p class="solutionTitle">Test Result 11 - 16: Moderate Anxiety</p>
+            <p class="solutionTitle">Possible Symptoms:</p>
+            -	Sweating<br>
+            -	Trembling<br>
+            -	Rapid breathing<br>
+            -	Having trouble sleeping<br>
+            <br>
+            <p class="solutionTitle">Suitable Treatments:</p>
+            -	Psychological Therapies<br>
+            -	Prescribed medication<br>
+            <br>
+            <p class="solutionTitle">Advices:</p>
+            Moderate Anxiety is becoming really common.<br>
+            Although the symptoms might not occur constantly on you,<br>
+            we do recommend you to have a talk with your family or any friends<br>
+            to ease your pressure.
+        </p>
+    </div>
+
+    <!-- Mild Anxiety -->
+    <div class="solution" id="solution4">
+        <p class="solutionContent">
+            <p class="solutionTitle">Test Result 17 - 22: Mild Anxiety</p>
+            <p class="solutionTitle">Possible Symptoms:</p>
+            -	Feeling nervous<br>
+            -	Having trouble sleeping<br>
+            -	Sweating<br>
+            <br>
+            <p class="solutionTitle">Suitable Treatments:</p>
+            -	Psychological Therapies<br>
+            -	Prescribed medication<br>
+            <br>
+            <p class="solutionTitle">Advices:</p>
+            Mild Anxiety is a common disorder that a lot people might have,<br>
+            but they do not realise it because the symptoms occur very rarely on them.<br>
+            Although it might not be severe, we do suggest you keep observing.
+        </p>
+    </div>
+
+    <br>
+    <p style="text-align: center; font-size: 14px; color: #00bfb6; font-weight: 500;">
+        ***The above content are for referernce purposes only***<br>
+        Please seek for professional advices if necessary.
+      </p>
+    <br><br><br>
+    <div class="colourBar"></div>
+</div>
+
+<br><br><br><br><br><br><br>
+<footer>
+    <div class="w3-row"> 
+    <div class="w3-rest w3-bar w3-black">
+     <p style="color:white;text-align:center;">
+       &nbsp;<un>Student Number : T0118137</un> &nbsp;&nbsp;&nbsp; 
+       <un>University Email : T0118137@my.ntu.ac.uk</un> &nbsp;&nbsp;&nbsp; 
+       <un>Personal Email : 9LDSKING@gmail.com</un>
+     </p>
+    </div></div>
+    <div style="color:yellow">&copy; Copyright Ho Hin Ng Percy</div>
+</footer>
+
+<!-- JavaScript -->
+<script>
+// Animation timeset for roller
+setTimeout(function() 
+{
+    $('#lds-roller').fadeOut('slow');
+}, 5000);
+    
+// Animation timeset for main content
+setTimeout(function() 
+{
+    $('#resultContent').fadeIn('slow');
+}, 5500);
+</script>
+
+<script>
+// function for navbar
+function topbarToNav() 
+{
+    var n = document.getElementById("Navtopbar");
+    if (n.className === "topbar") 
+    {
+        n.className += " responsive";
+    } 
+    else 
+    {
+        n.className = "topbar";
+    }
+}
+</script>
+
+<script>
+window.onload = function()
+{
+    document.getElementById("downloadPDF")
+    .addEventListener("click", ()=>
+    {
+        const testReport = this.document.getElementById("testReport");
+        console.log(testReport);
+        console.log(window);
+        var printSetting = 
+        {
+            margin: 1, 
+            filename: 'Mental Health Measures Report.pdf',
+            image: { type: 'png', quality: 0.98 },
+            html2canvas: { scale: 2 },
+            jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+        };
+        html2pdf().from(testReport).set(printSetting).save();
+    })
+}
+</script>
+
+<script>
+if(localStorage.result >= 0 && localStorage.result <= 4)
+{
+    setTimeout(function() 
+    {
+        $('#detectIssue1').fadeIn('slow');
+        $('#disorderPic1').fadeIn('slow');
+        $('#solution1').fadeIn('slow');
+    }, 5500);
+}
+else if(localStorage.result >= 5 && localStorage.result <= 10)
+{
+    setTimeout(function() 
+    {
+        $('#detectIssue2').fadeIn('slow');
+        $('#solution2').fadeIn('slow');
+    }, 5500);
+}
+else if(localStorage.result >= 11 && localStorage.result <= 16)
+{
+    setTimeout(function() 
+    {
+        $('#detectIssue3').fadeIn('slow');
+        $('#solution3').fadeIn('slow');
+    }, 5500);
+}
+else if(localStorage.result >= 17 && localStorage.result <= 22)
+{
+    setTimeout(function() 
+    {
+        $('#detectIssue4').fadeIn('slow');
+        $('#solution4').fadeIn('slow');
+    }, 5500);
+}
+</script>
+
+<script>
+// Print the result from localStorage
+document.getElementById('resultContent').innerHTML = "Your test result is " + localStorage.result + "/22.";
+window.localStorage.clear();
+</script>
+
+<script>
+// Function of sending alert to the user 
+// to prevent accidently close the browser
+window.onbeforeunload = function () 
+{
+    var alertMsg = "Your answers will not be saved, are you sure you are leaving?";
+    return alertMsg;
+}
+</script>
+
+</body>
+</html>
