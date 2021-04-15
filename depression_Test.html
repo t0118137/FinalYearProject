@@ -15,17 +15,17 @@
 <div class="colourBar"></div>
 
 <!-- Question 1 -->
-<div class="onlineTestSlide">
+<div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
         1. If you have to rate yourself, how deep do you 
         think you have participated in the movement?
     </div>
     
     <div class="btnArea">
-        <button class="onlineTestBtn" id="onlineTestBtn1A" onclick="setColor(1); change(+1);">A. 0 – 25%</button>
-        <button class="onlineTestBtn" id="onlineTestBtn1B" onclick="setColor(2); change(+1);">B. 25 – 50%</button>
-        <button class="onlineTestBtn" id="onlineTestBtn1C" onclick="setColor(3); change(+1);">C. 50 – 75%</button>
-        <button class="onlineTestBtn" id="onlineTestBtn1D" onclick="setColor(4); change(+1);">D. 75 – 100%</button>
+        <button class="onlineTestBtn" id="onlineTestBtn1A" onclick="setColor(1); change(+1);">A. 75 – 100%</button>
+        <button class="onlineTestBtn" id="onlineTestBtn1B" onclick="setColor(2); change(+1);">B. 50 – 75%</button>
+        <button class="onlineTestBtn" id="onlineTestBtn1C" onclick="setColor(3); change(+1);">C. 25 – 50%</button>
+        <button class="onlineTestBtn" id="onlineTestBtn1D" onclick="setColor(4); change(+1);">D. 0 – 25%</button>
     </div><br>
 
     <button class="nextBtn" id="nextBtn1" onclick="change(+1)">Next</button>
@@ -33,7 +33,7 @@
 </div>
 
 <!-- Question 2 -->
-<div class="onlineTestSlide">
+<div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
         2. Have you ever experienced any kinds of police 
         brutality (e.g. Pepper sprayed, got beaten)?
@@ -50,17 +50,14 @@
 </div>
 
 <!-- Question 3 -->
-<div class="onlineTestSlide">
+<div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
-        3. Which kind of mental health issue below is the 
-        most likely you think you might have?
+        3. Did you ever be arrested because of the 2019 movement?
     </div>
     
     <div class="btnArea">
-        <button class="onlineTestBtn" id="onlineTestBtn3A" onclick="setColor(7); change(+1);">A. Anxiety</button>
-        <button class="onlineTestBtn" id="onlineTestBtn3B" onclick="setColor(8); change(+1);">B. Depression</button>
-        <button class="onlineTestBtn" id="onlineTestBtn3C" onclick="setColor(9); change(+1);">C. PTSD</button>
-        <button class="onlineTestBtn" id="onlineTestBtn3D" onclick="setColor(10); change(+1);">D. Phobia</button>
+        <button class="onlineTestBtn" id="onlineTestBtn3A" onclick="setColor(7); change(+1);">A. Yes</button>
+        <button class="onlineTestBtn" id="onlineTestBtn3B" onclick="setColor(8); change(+1);">B. No</button>
     </div><br>
 
     <button class="prevBtn" onclick="change(-1)">Previous</button>
@@ -69,18 +66,14 @@
 </div>
 
 <!-- Question 4 -->
-<div class="onlineTestSlide">
+<div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
-        4. Based on the Question 3), how serious do you think 
-        that mental health issue is affecting your daily life 
-        (e.g., study, social life)?
+        4. Do you agree that you are feeling overwhelmingly sad at times? 
     </div>
     
     <div class="btnArea">
-        <button class="onlineTestBtn" id="onlineTestBtn4A" onclick="setColor(11); change(+1);">A. 0 – 25%</button>
-        <button class="onlineTestBtn" id="onlineTestBtn4B" onclick="setColor(12); change(+1);">B. 25 – 50%</button>
-        <button class="onlineTestBtn" id="onlineTestBtn4C" onclick="setColor(13); change(+1);">C. 50 – 75%</button>
-        <button class="onlineTestBtn" id="onlineTestBtn4D" onclick="setColor(14); change(+1);">D. 75 – 100%</button>
+        <button class="onlineTestBtn" id="onlineTestBtn4A" onclick="setColor(9); change(+1);">A. Agree</button>
+        <button class="onlineTestBtn" id="onlineTestBtn4B" onclick="setColor(10); change(+1);">B. Disagree</button>
     </div><br>
 
     <button class="prevBtn" onclick="change(-1)">Previous</button>
@@ -89,18 +82,14 @@
 </div>
 
 <!-- Question 5 -->
-<div class="onlineTestSlide">
+<div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
-        5. Which negative feeling below you have ever 
-        experienced during the 2019 movement? 
-        (Please select the most affecting one)
+        5. Do you agree that you are always feeling tearful?
     </div>
     
     <div class="btnArea">
-        <button class="onlineTestBtn" id="onlineTestBtn5A" onclick="setColor(15); change(+1);">A. Anger</button>
-        <button class="onlineTestBtn" id="onlineTestBtn5B" onclick="setColor(16); change(+1);">B. Depressed</button>
-        <button class="onlineTestBtn" id="onlineTestBtn5C" onclick="setColor(17); change(+1);">C. Feeling hopeless</button>
-        <button class="onlineTestBtn" id="onlineTestBtn5D" onclick="setColor(18); change(+1);">D. Survivor’s guilt</button>
+        <button class="onlineTestBtn" id="onlineTestBtn5A" onclick="setColor(11); change(+1);">A. Agree</button>
+        <button class="onlineTestBtn" id="onlineTestBtn5B" onclick="setColor(12); change(+1);">B. Disgree</button>
     </div><br>
 
     <button class="prevBtn" onclick="change(-1)">Previous</button>
@@ -109,18 +98,15 @@
 </div>
 
 <!-- Question 6 -->
-<!-- Anxiety's symptom -->
-<div class="onlineTestSlide">
+<div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
-        6. Do you agree that you have difficulties with sleep? 
-        Such as waking up early or hard to stay asleep.
+        6. Which kind of negative feelings below you have 
+        ever experienced during the 2019 movement?
     </div>
     
     <div class="btnArea">
-        <button class="onlineTestBtn" id="onlineTestBtn6A" onclick="setColor(19); change(+1);">A. Totally agree</button>
-        <button class="onlineTestBtn" id="onlineTestBtn6B" onclick="setColor(20); change(+1);">B. Slightly agree</button>
-        <button class="onlineTestBtn" id="onlineTestBtn6C" onclick="setColor(21); change(+1);">C. Slightly disagree</button>
-        <button class="onlineTestBtn" id="onlineTestBtn6D" onclick="setColor(22); change(+1);">D. Totally disagree</button>
+        <button class="onlineTestBtn" id="onlineTestBtn6A" onclick="setColor(13); change(+1);">A. Depressed</button>
+        <button class="onlineTestBtn" id="onlineTestBtn6B" onclick="setColor(14); change(+1);">B. Anger</button>
     </div><br>
 
     <button class="prevBtn" onclick="change(-1)">Previous</button>
@@ -129,17 +115,14 @@
 </div>
 
 <!-- Question 7 -->
-<!-- Depression's symptom -->
-<div class="onlineTestSlide">
+<div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
-        7. Do you agree that you are feeling overwhelmingly sad at times?
+        7. Are you constantly feeling tired or sleepy?
     </div>
     
     <div class="btnArea">
-        <button class="onlineTestBtn" id="onlineTestBtn7A" onclick="setColor(23); change(+1);">A. Totally agree</button>
-        <button class="onlineTestBtn" id="onlineTestBtn7B" onclick="setColor(24); change(+1);">B. Slightly agree</button>
-        <button class="onlineTestBtn" id="onlineTestBtn7C" onclick="setColor(25); change(+1);">C. Slightly disagree</button>
-        <button class="onlineTestBtn" id="onlineTestBtn7D" onclick="setColor(26); change(+1);">D. Totally disagree</button>
+        <button class="onlineTestBtn" id="onlineTestBtn7A" onclick="setColor(15); change(+1);">A. Yes</button>
+        <button class="onlineTestBtn" id="onlineTestBtn7B" onclick="setColor(16); change(+1);">B. No</button>
     </div><br>
 
     <button class="prevBtn" onclick="change(-1)">Previous</button>
@@ -149,17 +132,14 @@
 
 <!-- Question 8 -->
 <!-- PTSD's symptom -->
-<div class="onlineTestSlide">
+<div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
-        8. Do you agree that you are always upset because of the 
-        experiences of police brutality?
+        8. Are you constantly having pressure in your daily life?
     </div>
     
     <div class="btnArea">
-        <button class="onlineTestBtn" id="onlineTestBtn8A" onclick="setColor(27); change(+1);">A. Totally agree</button>
-        <button class="onlineTestBtn" id="onlineTestBtn8B" onclick="setColor(28); change(+1);">B. Slightly agree</button>
-        <button class="onlineTestBtn" id="onlineTestBtn8C" onclick="setColor(29); change(+1);">C. Slightly disagree</button>
-        <button class="onlineTestBtn" id="onlineTestBtn8D" onclick="setColor(30); change(+1);">D. Totally disagree</button>
+        <button class="onlineTestBtn" id="onlineTestBtn8A" onclick="setColor(17); change(+1);">A. Yes</button>
+        <button class="onlineTestBtn" id="onlineTestBtn8B" onclick="setColor(18); change(+1);">B. No</button>
     </div><br>
 
     <button class="prevBtn" onclick="change(-1)">Previous</button>
@@ -168,17 +148,14 @@
 </div>
 
 <!-- Question 9 -->
-<!-- Phobia's symptom -->
-<div class="onlineTestSlide">
+<div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
-        9. Do you agree that you have panic attacks frequently?
+        9. Do you agree that you are always feeling guilt-ridden?
     </div>
     
     <div class="btnArea">
-        <button class="onlineTestBtn" id="onlineTestBtn9A" onclick="setColor(31); change(+1);">A. Totally agree</button>
-        <button class="onlineTestBtn" id="onlineTestBtn9B" onclick="setColor(32); change(+1);">B. Slightly agree</button>
-        <button class="onlineTestBtn" id="onlineTestBtn9C" onclick="setColor(33); change(+1);">C. Slightly disagree</button>
-        <button class="onlineTestBtn" id="onlineTestBtn9D" onclick="setColor(34); change(+1);">D. Totally disagree</button>
+        <button class="onlineTestBtn" id="onlineTestBtn9A" onclick="setColor(19); change(+1);">A. Agree</button>
+        <button class="onlineTestBtn" id="onlineTestBtn9B" onclick="setColor(20); change(+1);">B. Disagree</button>
     </div><br>
 
     <button class="prevBtn" onclick="change(-1)">Previous</button>
@@ -188,20 +165,19 @@
 
 <!-- Question 10 -->
 <!-- Summary Question -->
-<div class="onlineTestSlide">
+<div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
         10. Do you agree that the 2019 movement is the main reason of 
         your mental health disorder symptoms?
     </div>
     
     <div class="btnArea">
-        <button class="onlineTestBtn" id="onlineTestBtn10A" onclick="setColor(35); change(+1);">A. Totally agree</button>
-        <button class="onlineTestBtn" id="onlineTestBtn10B" onclick="setColor(36); change(+1);">B. Slightly agree</button>
-        <button class="onlineTestBtn" id="onlineTestBtn10C" onclick="setColor(37); change(+1);">C. Slightly disagree</button>
-        <button class="onlineTestBtn" id="onlineTestBtn10D" onclick="setColor(38); change(+1);">D. Totally disagree</button>
+        <button class="onlineTestBtn" id="onlineTestBtn10A" onclick="setColor(21);">A. Agree</button>
+        <button class="onlineTestBtn" id="onlineTestBtn10B" onclick="setColor(22);">B. Disagree</button>
     </div><br>
 
     <button class="prevBtn" onclick="change(-1)">Previous</button>
+    <button class="submitBtn" id="submitBtn" onclick="submit();">Submit</button>
     <br><br>
 </div>
 
@@ -221,6 +197,14 @@
     <div style="color:yellow">&copy; Copyright Ho Hin Ng Percy</div>
 </footer>
 
+<!-- JavaScript -->
+<script>
+// LocalStorage of the online test score
+let measureValue = 22;
+localStorage.result = JSON.stringify(measureValue);
+let saved = JSON.parse(localStorage.result);
+log.textContent = saved === measureValue;
+</script>
 
 <script>
 // Change other buttons' color when one of them is clicked
@@ -246,6 +230,16 @@ function setColor(item)
         document.getElementById("onlineTestBtn1C").style.background="#00bfb6";
         document.getElementById("onlineTestBtn1D").style.background="#00bfb6";
         nextBtn1.style.display = "block";
+        // result value
+        if(localStorage.result <= 22)
+        {
+            localStorage.result = 22;
+            localStorage.result = localStorage.result - 3;
+        }
+        else if(localStorage == 22)
+        {
+            localStorage.result = localStorage.result - 3;
+        }
     }
     // if Question 1's answer is B
     else if(item == 2)
@@ -255,6 +249,16 @@ function setColor(item)
         document.getElementById("onlineTestBtn1C").style.background="#00bfb6";
         document.getElementById("onlineTestBtn1D").style.background="#00bfb6";
         nextBtn1.style.display = "block";
+        // result value
+        if(localStorage.result <= 22)
+        {
+            localStorage.result = 22;
+            localStorage.result = localStorage.result - 2;
+        }
+        else if(localStorage == 22)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
     }
     // if Question 1's answer is C
     else if(item == 3)
@@ -264,6 +268,16 @@ function setColor(item)
         document.getElementById("onlineTestBtn1C").style.background="#FFBF00";
         document.getElementById("onlineTestBtn1D").style.background="#00bfb6";
         nextBtn1.style.display = "block";
+        // result value
+        if(localStorage.result <= 22)
+        {
+            localStorage.result = 22;
+            localStorage.result = localStorage.result - 1;
+        }
+        else if(localStorage.result == 22)
+        {
+            localStorage.result = localStorage.result - 1;
+        }
     }
     // if Question 1's answer is D
     else if(item == 4)
@@ -272,7 +286,7 @@ function setColor(item)
         document.getElementById("onlineTestBtn1B").style.background="#00bfb6";
         document.getElementById("onlineTestBtn1C").style.background="#00bfb6";
         document.getElementById("onlineTestBtn1D").style.background="#FFBF00";
-        nextBtn1.style.display = "block";  
+        nextBtn1.style.display = "block";
     }
 
     // Question 2
@@ -282,6 +296,19 @@ function setColor(item)
         document.getElementById("onlineTestBtn2A").style.background="#FFBF00";
         document.getElementById("onlineTestBtn2B").style.background="#00bfb6";
         nextBtn2.style.display = "block";
+        // result value
+        if(localStorage.result >= 19)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else if(localStorage == 22)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else
+        {
+            localStorage.result = localStorage.result - 0;
+        }
     }
     // if Question 2's answer is B
     else if(item == 6)
@@ -297,304 +324,236 @@ function setColor(item)
     {
         document.getElementById("onlineTestBtn3A").style.background="#FFBF00";
         document.getElementById("onlineTestBtn3B").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn3C").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn3D").style.background="#00bfb6";
         nextBtn3.style.display = "block";
+        // result value
+        if(localStorage.result >= 17)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else if(localStorage == 22)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else
+        {
+            localStorage.result = localStorage.result - 0;
+        }
     }
     // if Question 3's answer is B
     else if(item == 8)
     {
         document.getElementById("onlineTestBtn3A").style.background="#00bfb6";
         document.getElementById("onlineTestBtn3B").style.background="#FFBF00";
-        document.getElementById("onlineTestBtn3C").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn3D").style.background="#00bfb6";
-        nextBtn3.style.display = "block";
-    }
-    // if Question 3's answer is C
-    else if(item == 9)
-    {
-        document.getElementById("onlineTestBtn3A").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn3B").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn3C").style.background="#FFBF00";
-        document.getElementById("onlineTestBtn3D").style.background="#00bfb6";
-        nextBtn3.style.display = "block";
-    }
-    // if Question 3's answer is D
-    else if(item == 10)
-    {
-        document.getElementById("onlineTestBtn3A").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn3B").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn3C").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn3D").style.background="#FFBF00";
         nextBtn3.style.display = "block";
     }
 
     // Question 4
     // if Question 4's answer is A
-    if(item == 11)
+    if(item == 9)
     {
         document.getElementById("onlineTestBtn4A").style.background="#FFBF00";
         document.getElementById("onlineTestBtn4B").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn4C").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn4D").style.background="#00bfb6";
         nextBtn4.style.display = "block";
+        // result value
+        if(localStorage.result >= 15)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else if(localStorage == 22)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else
+        {
+            localStorage.result = localStorage.result - 0;
+        }
     }
     // if Question 4's answer is B
-    else if(item == 12)
+    else if(item == 10)
     {
         document.getElementById("onlineTestBtn4A").style.background="#00bfb6";
         document.getElementById("onlineTestBtn4B").style.background="#FFBF00";
-        document.getElementById("onlineTestBtn4C").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn4D").style.background="#00bfb6";
-        nextBtn4.style.display = "block";
-    }
-    // if Question 4's answer is C
-    else if(item == 13)
-    {
-        document.getElementById("onlineTestBtn4A").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn4B").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn4C").style.background="#FFBF00";
-        document.getElementById("onlineTestBtn4D").style.background="#00bfb6";
-        nextBtn4.style.display = "block";
-    }
-    // if Question 4's answer is D
-    else if(item == 14)
-    {
-        document.getElementById("onlineTestBtn4A").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn4B").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn4C").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn4D").style.background="#FFBF00";
         nextBtn4.style.display = "block";
     }
 
     // Question 5
     // if Question 5's answer is A
-    if(item == 15)
+    if(item == 11)
     {
         document.getElementById("onlineTestBtn5A").style.background="#FFBF00";
         document.getElementById("onlineTestBtn5B").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn5C").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn5D").style.background="#00bfb6";
         nextBtn5.style.display = "block";
+        // result value
+        if(localStorage.result >= 13)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else if(localStorage == 22)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else
+        {
+            localStorage.result = localStorage.result - 0;
+        }
     }
     // if Question 5's answer is B
-    else if(item == 16)
+    else if(item == 12)
     {
         document.getElementById("onlineTestBtn5A").style.background="#00bfb6";
         document.getElementById("onlineTestBtn5B").style.background="#FFBF00";
-        document.getElementById("onlineTestBtn5C").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn5D").style.background="#00bfb6";
-        nextBtn5.style.display = "block";
-    }
-    // if Question 5's answer is C
-    else if(item == 17)
-    {
-        document.getElementById("onlineTestBtn5A").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn5B").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn5C").style.background="#FFBF00";
-        document.getElementById("onlineTestBtn5D").style.background="#00bfb6";
-        nextBtn5.style.display = "block";
-    }
-    // if Question 5's answer is D
-    else if(item == 18)
-    {
-        document.getElementById("onlineTestBtn5A").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn5B").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn5C").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn5D").style.background="#FFBF00";
         nextBtn5.style.display = "block";
     }
 
     // Question 6
     // if Question 6's answer is A
-    if(item == 19)
+    if(item == 13)
     {
         document.getElementById("onlineTestBtn6A").style.background="#FFBF00";
         document.getElementById("onlineTestBtn6B").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn6C").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn6D").style.background="#00bfb6";
         nextBtn6.style.display = "block";
+        // result value
+        if(localStorage.result >= 11)
+        {
+            localStorage.result = localStorage.result - 3;
+        }
+        else if(localStorage == 22)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else
+        {
+            localStorage.result = localStorage.result - 0;
+        }
     }
     // if Question 6's answer is B
-    else if(item == 20)
+    else if(item == 14)
     {
         document.getElementById("onlineTestBtn6A").style.background="#00bfb6";
         document.getElementById("onlineTestBtn6B").style.background="#FFBF00";
-        document.getElementById("onlineTestBtn6C").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn6D").style.background="#00bfb6";
-        nextBtn6.style.display = "block";
-    }
-    // if Question 6's answer is C
-    else if(item == 21)
-    {
-        document.getElementById("onlineTestBtn6A").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn6B").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn6C").style.background="#FFBF00";
-        document.getElementById("onlineTestBtn6D").style.background="#00bfb6";
-        nextBtn6.style.display = "block";
-    }
-    // if Question 6's answer is D
-    else if(item == 22)
-    {
-        document.getElementById("onlineTestBtn6A").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn6B").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn6C").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn6D").style.background="#FFBF00";
         nextBtn6.style.display = "block";
     }
 
     // Question 7
     // if Question 7's answer is A
-    if(item == 23)
+    if(item == 15)
     {
         document.getElementById("onlineTestBtn7A").style.background="#FFBF00";
         document.getElementById("onlineTestBtn7B").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn7C").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn7D").style.background="#00bfb6";
         nextBtn7.style.display = "block";
+        // result value
+        if(localStorage.result >= 8)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else if(localStorage == 22)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else
+        {
+            localStorage.result = localStorage.result - 0;
+        }
     }
     // if Question 7's answer is B
-    else if(item == 24)
+    else if(item == 16)
     {
         document.getElementById("onlineTestBtn7A").style.background="#00bfb6";
         document.getElementById("onlineTestBtn7B").style.background="#FFBF00";
-        document.getElementById("onlineTestBtn7C").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn7D").style.background="#00bfb6";
-        nextBtn7.style.display = "block";
-    }
-    // if Question 7's answer is C
-    else if(item == 25)
-    {
-        document.getElementById("onlineTestBtn7A").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn7B").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn7C").style.background="#FFBF00";
-        document.getElementById("onlineTestBtn7D").style.background="#00bfb6";
-        nextBtn7.style.display = "block";
-    }
-    // if Question 7's answer is D
-    else if(item == 26)
-    {
-        document.getElementById("onlineTestBtn7A").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn7B").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn7C").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn7D").style.background="#FFBF00";
         nextBtn7.style.display = "block";
     }
 
     // Question 8
     // if Question 8's answer is A
-    if(item == 27)
+    if(item == 17)
     {
         document.getElementById("onlineTestBtn8A").style.background="#FFBF00";
         document.getElementById("onlineTestBtn8B").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn8C").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn8D").style.background="#00bfb6";
         nextBtn8.style.display = "block";
+        // result value
+        if(localStorage.result >= 6)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else if(localStorage == 22)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else
+        {
+            localStorage.result = localStorage.result - 0;
+        }
     }
     // if Question 8's answer is B
-    else if(item == 28)
+    else if(item == 18)
     {
         document.getElementById("onlineTestBtn8A").style.background="#00bfb6";
         document.getElementById("onlineTestBtn8B").style.background="#FFBF00";
-        document.getElementById("onlineTestBtn8C").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn8D").style.background="#00bfb6";
-        nextBtn8.style.display = "block";
-    }
-    // if Question 8's answer is C
-    else if(item == 29)
-    {
-        document.getElementById("onlineTestBtn8A").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn8B").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn8C").style.background="#FFBF00";
-        document.getElementById("onlineTestBtn8D").style.background="#00bfb6";
-        nextBtn8.style.display = "block";
-    }
-    // if Question 8's answer is D
-    else if(item == 30)
-    {
-        document.getElementById("onlineTestBtn8A").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn8B").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn8C").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn8D").style.background="#FFBF00";
         nextBtn8.style.display = "block";
     }
 
     // Question 9
     // if Question 9's answer is A
-    if(item == 31)
+    if(item == 19)
     {
         document.getElementById("onlineTestBtn9A").style.background="#FFBF00";
         document.getElementById("onlineTestBtn9B").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn9C").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn9D").style.background="#00bfb6";
         nextBtn9.style.display = "block";
+        // result value
+        if(localStorage.result >= 4)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else if(localStorage == 22)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else
+        {
+            localStorage.result = localStorage.result - 0;
+        }
     }
     // if Question 9's answer is B
-    else if(item == 32)
+    else if(item == 20)
     {
         document.getElementById("onlineTestBtn9A").style.background="#00bfb6";
         document.getElementById("onlineTestBtn9B").style.background="#FFBF00";
-        document.getElementById("onlineTestBtn9C").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn9D").style.background="#00bfb6";
-        nextBtn9.style.display = "block";
-    }
-    // if Question 9's answer is C
-    else if(item == 33)
-    {
-        document.getElementById("onlineTestBtn9A").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn9B").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn9C").style.background="#FFBF00";
-        document.getElementById("onlineTestBtn9D").style.background="#00bfb6";
-        nextBtn9.style.display = "block";
-    }
-    // if Question 9's answer is D
-    else if(item == 34)
-    {
-        document.getElementById("onlineTestBtn9A").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn9B").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn9C").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn9D").style.background="#FFBF00";
         nextBtn9.style.display = "block";
     }
 
     // Question 10
     // if Question 10's answer is A
-    if(item == 35)
+    if(item == 21)
     {
         document.getElementById("onlineTestBtn10A").style.background="#FFBF00";
         document.getElementById("onlineTestBtn10B").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn10C").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn10D").style.background="#00bfb6";
+        submitBtn.style.display = "block";
+        // result value
+        if(localStorage.result >= 2)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else if(localStorage == 22)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else
+        {
+            localStorage.result = localStorage.result - 0;
+        }
     }
     // if Question 10's answer is B
-    else if(item == 36)
+    else if(item == 22)
     {
         document.getElementById("onlineTestBtn10A").style.background="#00bfb6";
         document.getElementById("onlineTestBtn10B").style.background="#FFBF00";
-        document.getElementById("onlineTestBtn10C").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn10D").style.background="#00bfb6";
-    }
-    // if Question 10's answer is C
-    else if(item == 37)
-    {
-        document.getElementById("onlineTestBtn10A").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn10B").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn10C").style.background="#FFBF00";
-        document.getElementById("onlineTestBtn10D").style.background="#00bfb6";
-    }
-    // if Question 10's answer is D
-    else if(item == 38)
-    {
-        document.getElementById("onlineTestBtn10A").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn10B").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn10C").style.background="#00bfb6";
-        document.getElementById("onlineTestBtn10D").style.background="#FFBF00";
+        submitBtn.style.display = "block";
     }
 }
 </script>
 
 <script>
-//Set variable of slidenumber as 1
+// Set variable of slidenumber as 1
 var slidenumber = 1;
 showDivs(slidenumber);
 
@@ -603,7 +562,7 @@ function change(n)
     showDivs(slidenumber += n);
 }
 
-//Function of showDivs with onlineTestSlide
+// Function of showDivs with onlineTestSlide
 function showDivs(n) 
 {
   var i;
@@ -612,11 +571,36 @@ function showDivs(n)
   if (n < 1) {slidenumber = x.length};
   for (i = 0; i < x.length; i++) 
   {
-     //For Hidden slides
+     // For Hidden slides
      x[i].style.display = "none";  
   }
-  //For Visible slides
+  // For Visible slides
   x[slidenumber-1].style.display = "block";  
+}
+</script>
+
+<script>
+// Function of replacing the page with test result html
+// Confirm dialog for the user to submit answers
+function submit()
+{
+    var confirmDialog = "Are you sure to submit your answers?"
+    var c = confirm(confirmDialog);
+    if(c == true)
+    {
+        window.onbeforeunload = null;
+        location.replace("depression_Test_Result.html");
+    }
+}
+</script>
+
+<script>
+// Function of sending alert to the user 
+// to prevent accidently close the browser
+window.onbeforeunload = function () 
+{
+    var alertMsg = "Your answers will not be saved, are you sure you are leaving?";
+    return alertMsg;
 }
 </script>
 

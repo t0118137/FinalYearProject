@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PTSD Test | Mental Health Measures HK</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="1. CSS StyleSheet/mainStylesheet.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+<!-- Logo -->
+<div><a href="index.html" target="_blank"><img border="0" src="2. Images/icon.png" width="350px" height="155px"></a></div>
+
+<div class="colourBar"></div>
+
+<!-- Question 1 -->
+<div class="onlineTestSlide fade">
+    <div class="onlineTestQuestion">
+        1. If you have to rate yourself, how deep do you 
+        think you have participated in the movement?
+    </div>
+    
+    <div class="btnArea">
+        <button class="onlineTestBtn" id="onlineTestBtn1A" onclick="setColor(1); change(+1);">A. 75 – 100%</button>
+        <button class="onlineTestBtn" id="onlineTestBtn1B" onclick="setColor(2); change(+1);">B. 50 – 75%</button>
+        <button class="onlineTestBtn" id="onlineTestBtn1C" onclick="setColor(3); change(+1);">C. 25 – 50%</button>
+        <button class="onlineTestBtn" id="onlineTestBtn1D" onclick="setColor(4); change(+1);">D. 0 – 25%</button>
+    </div><br>
+
+    <button class="nextBtn" id="nextBtn1" onclick="change(+1)">Next</button>
+    <br><br>
+</div>
+
+<!-- Question 2 -->
+<div class="onlineTestSlide fade">
+    <div class="onlineTestQuestion">
+        2. Have you ever experienced any kinds of police 
+        brutality (e.g. Pepper sprayed, got beaten)?
+    </div>
+    
+    <div class="btnArea">
+        <button class="onlineTestBtn" id="onlineTestBtn2A" onclick="setColor(5); change(+1);">A. Yes</button>
+        <button class="onlineTestBtn" id="onlineTestBtn2B" onclick="setColor(6); change(+1);">B. No</button>
+    </div><br>
+
+    <button class="prevBtn" onclick="change(-1)">Previous</button>
+    <button class="nextBtn" id="nextBtn2" onclick="change(+1)">Next</button>
+    <br><br>
+</div>
+
+<!-- Question 3 -->
+<div class="onlineTestSlide fade">
+    <div class="onlineTestQuestion">
+        3. Did you ever be arrested because of the 2019 movement?
+    </div>
+    
+    <div class="btnArea">
+        <button class="onlineTestBtn" id="onlineTestBtn3A" onclick="setColor(7); change(+1);">A. Yes</button>
+        <button class="onlineTestBtn" id="onlineTestBtn3B" onclick="setColor(8); change(+1);">B. No</button>
+    </div><br>
+
+    <button class="prevBtn" onclick="change(-1)">Previous</button>
+    <button class="nextBtn" id="nextBtn3" onclick="change(+1)">Next</button>
+    <br><br>
+</div>
+
+<!-- Question 4 -->
+<div class="onlineTestSlide fade">
+    <div class="onlineTestQuestion">
+        4. Do you agree that you are having flashbacks or 
+        nightmares frequently?
+    </div>
+    
+    <div class="btnArea">
+        <button class="onlineTestBtn" id="onlineTestBtn4A" onclick="setColor(9); change(+1);">A. Agree</button>
+        <button class="onlineTestBtn" id="onlineTestBtn4B" onclick="setColor(10); change(+1);">B. Disagree</button>
+    </div><br>
+
+    <button class="prevBtn" onclick="change(-1)">Previous</button>
+    <button class="nextBtn" id="nextBtn4" onclick="change(+1)">Next</button>
+    <br><br>
+</div>
+
+<!-- Question 5 -->
+<div class="onlineTestSlide fade">
+    <div class="onlineTestQuestion">
+        5. Do you agree that you are currently emotional 
+        numbing to a lot of things?
+    </div>
+    
+    <div class="btnArea">
+        <button class="onlineTestBtn" id="onlineTestBtn5A" onclick="setColor(11); change(+1);">A. Agree</button>
+        <button class="onlineTestBtn" id="onlineTestBtn5B" onclick="setColor(12); change(+1);">B. Disgree</button>
+    </div><br>
+
+    <button class="prevBtn" onclick="change(-1)">Previous</button>
+    <button class="nextBtn" id="nextBtn5" onclick="change(+1)">Next</button>
+    <br><br>
+</div>
+
+<!-- Question 6 -->
+<div class="onlineTestSlide fade">
+    <div class="onlineTestQuestion">
+        6. Which negative feeling below you have ever 
+        experienced during the 2019 movement? 
+        (Please select the most affecting one)
+    </div>
+    
+    <div class="btnArea">
+        <button class="onlineTestBtn" id="onlineTestBtn6A" onclick="setColor(13); change(+1);">A. Survivor’s guilt</button>
+        <button class="onlineTestBtn" id="onlineTestBtn6B" onclick="setColor(14); change(+1);">B. Depressed</button>
+    </div><br>
+
+    <button class="prevBtn" onclick="change(-1)">Previous</button>
+    <button class="nextBtn" id="nextBtn6" onclick="change(+1)">Next</button>
+    <br><br>
+</div>
+
+<!-- Question 7 -->
+<div class="onlineTestSlide fade">
+    <div class="onlineTestQuestion">
+        7. Are you constantly watchful or easily shocked?
+    </div>
+    
+    <div class="btnArea">
+        <button class="onlineTestBtn" id="onlineTestBtn7A" onclick="setColor(15); change(+1);">A. Yes</button>
+        <button class="onlineTestBtn" id="onlineTestBtn7B" onclick="setColor(16); change(+1);">B. No</button>
+    </div><br>
+
+    <button class="prevBtn" onclick="change(-1)">Previous</button>
+    <button class="nextBtn" id="nextBtn7" onclick="change(+1)">Next</button>
+    <br><br>
+</div>
+
+<!-- Question 8 -->
+<!-- PTSD's symptom -->
+<div class="onlineTestSlide fade">
+    <div class="onlineTestQuestion">
+        8. Are you constantly feeling guilty or 
+        keep blaming on different things?
+    </div>
+    
+    <div class="btnArea">
+        <button class="onlineTestBtn" id="onlineTestBtn8A" onclick="setColor(17); change(+1);">A. Yes</button>
+        <button class="onlineTestBtn" id="onlineTestBtn8B" onclick="setColor(18); change(+1);">B. No</button>
+    </div><br>
+
+    <button class="prevBtn" onclick="change(-1)">Previous</button>
+    <button class="nextBtn" id="nextBtn8" onclick="change(+1)">Next</button>
+    <br><br>
+</div>
+
+<!-- Question 9 -->
+<div class="onlineTestSlide fade">
+    <div class="onlineTestQuestion">
+        9. Do you agree that you are always upset 
+        because of the experiences of police brutality?
+    </div>
+    
+    <div class="btnArea">
+        <button class="onlineTestBtn" id="onlineTestBtn9A" onclick="setColor(19); change(+1);">A. Agree</button>
+        <button class="onlineTestBtn" id="onlineTestBtn9B" onclick="setColor(20); change(+1);">B. Disagree</button>
+    </div><br>
+
+    <button class="prevBtn" onclick="change(-1)">Previous</button>
+    <button class="nextBtn" id="nextBtn9" onclick="change(+1)">Next</button>
+    <br><br>
+</div>
+
+<!-- Question 10 -->
+<!-- Summary Question -->
+<div class="onlineTestSlide fade">
+    <div class="onlineTestQuestion">
+        10. Do you agree that the 2019 movement is the main reason of 
+        your mental health disorder symptoms?
+    </div>
+    
+    <div class="btnArea">
+        <button class="onlineTestBtn" id="onlineTestBtn10A" onclick="setColor(21);">A. Agree</button>
+        <button class="onlineTestBtn" id="onlineTestBtn10B" onclick="setColor(22);">B. Disagree</button>
+    </div><br>
+
+    <button class="prevBtn" onclick="change(-1)">Previous</button>
+    <button class="submitBtn" id="submitBtn" onclick="submit();">Submit</button>
+    <br><br>
+</div>
+
+<br><br><br><br>
+<div class="colourBar"></div>
+
+<br><br><br><br><br><br><br>
+<footer>
+    <div class="w3-row"> 
+    <div class="w3-rest w3-bar w3-black">
+     <p style="color:white;text-align:center;">
+       &nbsp;<un>Student Number : T0118137</un> &nbsp;&nbsp;&nbsp; 
+       <un>University Email : T0118137@my.ntu.ac.uk</un> &nbsp;&nbsp;&nbsp; 
+       <un>Personal Email : 9LDSKING@gmail.com</un>
+     </p>
+    </div></div>
+    <div style="color:yellow">&copy; Copyright Ho Hin Ng Percy</div>
+</footer>
+
+<!-- JavaScript -->
+<script>
+// LocalStorage of the online test score
+let measureValue = 22;
+localStorage.result = JSON.stringify(measureValue);
+let saved = JSON.parse(localStorage.result);
+log.textContent = saved === measureValue;
+</script>
+
+<script>
+// Change other buttons' color when one of them is clicked
+function setColor(item)
+{
+    var item;
+    var nextBtn1 = document.getElementById("nextBtn1");
+    var nextBtn2 = document.getElementById("nextBtn2");
+    var nextBtn3 = document.getElementById("nextBtn3");
+    var nextBtn4 = document.getElementById("nextBtn4");
+    var nextBtn5 = document.getElementById("nextBtn5");
+    var nextBtn6 = document.getElementById("nextBtn6");
+    var nextBtn7 = document.getElementById("nextBtn7");
+    var nextBtn8 = document.getElementById("nextBtn8");
+    var nextBtn9 = document.getElementById("nextBtn9");
+
+    // Question 1
+    // if Question 1's answer is A
+    if(item == 1)
+    {
+        document.getElementById("onlineTestBtn1A").style.background="#FFBF00";
+        document.getElementById("onlineTestBtn1B").style.background="#00bfb6";
+        document.getElementById("onlineTestBtn1C").style.background="#00bfb6";
+        document.getElementById("onlineTestBtn1D").style.background="#00bfb6";
+        nextBtn1.style.display = "block";
+        // result value
+        if(localStorage.result <= 22)
+        {
+            localStorage.result = 22;
+            localStorage.result = localStorage.result - 3;
+        }
+        else if(localStorage == 22)
+        {
+            localStorage.result = localStorage.result - 3;
+        }
+    }
+    // if Question 1's answer is B
+    else if(item == 2)
+    {
+        document.getElementById("onlineTestBtn1A").style.background="#00bfb6";
+        document.getElementById("onlineTestBtn1B").style.background="#FFBF00";
+        document.getElementById("onlineTestBtn1C").style.background="#00bfb6";
+        document.getElementById("onlineTestBtn1D").style.background="#00bfb6";
+        nextBtn1.style.display = "block";
+        // result value
+        if(localStorage.result <= 22)
+        {
+            localStorage.result = 22;
+            localStorage.result = localStorage.result - 2;
+        }
+        else if(localStorage == 22)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+    }
+    // if Question 1's answer is C
+    else if(item == 3)
+    {
+        document.getElementById("onlineTestBtn1A").style.background="#00bfb6";
+        document.getElementById("onlineTestBtn1B").style.background="#00bfb6";
+        document.getElementById("onlineTestBtn1C").style.background="#FFBF00";
+        document.getElementById("onlineTestBtn1D").style.background="#00bfb6";
+        nextBtn1.style.display = "block";
+        // result value
+        if(localStorage.result <= 22)
+        {
+            localStorage.result = 22;
+            localStorage.result = localStorage.result - 1;
+        }
+        else if(localStorage.result == 22)
+        {
+            localStorage.result = localStorage.result - 1;
+        }
+    }
+    // if Question 1's answer is D
+    else if(item == 4)
+    {
+        document.getElementById("onlineTestBtn1A").style.background="#00bfb6";
+        document.getElementById("onlineTestBtn1B").style.background="#00bfb6";
+        document.getElementById("onlineTestBtn1C").style.background="#00bfb6";
+        document.getElementById("onlineTestBtn1D").style.background="#FFBF00";
+        nextBtn1.style.display = "block";
+    }
+
+    // Question 2
+    // if Question 2's answer is A
+    if(item == 5)
+    {
+        document.getElementById("onlineTestBtn2A").style.background="#FFBF00";
+        document.getElementById("onlineTestBtn2B").style.background="#00bfb6";
+        nextBtn2.style.display = "block";
+        // result value
+        if(localStorage.result >= 19)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else if(localStorage == 22)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else
+        {
+            localStorage.result = localStorage.result - 0;
+        }
+    }
+    // if Question 2's answer is B
+    else if(item == 6)
+    {
+        document.getElementById("onlineTestBtn2A").style.background="#00bfb6";
+        document.getElementById("onlineTestBtn2B").style.background="#FFBF00";
+        nextBtn2.style.display = "block";
+    }
+    
+    // Question 3
+    // if Question 3's answer is A
+    if(item == 7)
+    {
+        document.getElementById("onlineTestBtn3A").style.background="#FFBF00";
+        document.getElementById("onlineTestBtn3B").style.background="#00bfb6";
+        nextBtn3.style.display = "block";
+        // result value
+        if(localStorage.result >= 17)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else if(localStorage == 22)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else
+        {
+            localStorage.result = localStorage.result - 0;
+        }
+    }
+    // if Question 3's answer is B
+    else if(item == 8)
+    {
+        document.getElementById("onlineTestBtn3A").style.background="#00bfb6";
+        document.getElementById("onlineTestBtn3B").style.background="#FFBF00";
+        nextBtn3.style.display = "block";
+    }
+
+    // Question 4
+    // if Question 4's answer is A
+    if(item == 9)
+    {
+        document.getElementById("onlineTestBtn4A").style.background="#FFBF00";
+        document.getElementById("onlineTestBtn4B").style.background="#00bfb6";
+        nextBtn4.style.display = "block";
+        // result value
+        if(localStorage.result >= 15)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else if(localStorage == 22)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else
+        {
+            localStorage.result = localStorage.result - 0;
+        }
+    }
+    // if Question 4's answer is B
+    else if(item == 10)
+    {
+        document.getElementById("onlineTestBtn4A").style.background="#00bfb6";
+        document.getElementById("onlineTestBtn4B").style.background="#FFBF00";
+        nextBtn4.style.display = "block";
+    }
+
+    // Question 5
+    // if Question 5's answer is A
+    if(item == 11)
+    {
+        document.getElementById("onlineTestBtn5A").style.background="#FFBF00";
+        document.getElementById("onlineTestBtn5B").style.background="#00bfb6";
+        nextBtn5.style.display = "block";
+        // result value
+        if(localStorage.result >= 13)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else if(localStorage == 22)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else
+        {
+            localStorage.result = localStorage.result - 0;
+        }
+    }
+    // if Question 5's answer is B
+    else if(item == 12)
+    {
+        document.getElementById("onlineTestBtn5A").style.background="#00bfb6";
+        document.getElementById("onlineTestBtn5B").style.background="#FFBF00";
+        nextBtn5.style.display = "block";
+    }
+
+    // Question 6
+    // if Question 6's answer is A
+    if(item == 13)
+    {
+        document.getElementById("onlineTestBtn6A").style.background="#FFBF00";
+        document.getElementById("onlineTestBtn6B").style.background="#00bfb6";
+        nextBtn6.style.display = "block";
+        // result value
+        if(localStorage.result >= 11)
+        {
+            localStorage.result = localStorage.result - 3;
+        }
+        else if(localStorage == 22)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else
+        {
+            localStorage.result = localStorage.result - 0;
+        }
+    }
+    // if Question 6's answer is B
+    else if(item == 14)
+    {
+        document.getElementById("onlineTestBtn6A").style.background="#00bfb6";
+        document.getElementById("onlineTestBtn6B").style.background="#FFBF00";
+        nextBtn6.style.display = "block";
+    }
+
+    // Question 7
+    // if Question 7's answer is A
+    if(item == 15)
+    {
+        document.getElementById("onlineTestBtn7A").style.background="#FFBF00";
+        document.getElementById("onlineTestBtn7B").style.background="#00bfb6";
+        nextBtn7.style.display = "block";
+        // result value
+        if(localStorage.result >= 8)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else if(localStorage == 22)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else
+        {
+            localStorage.result = localStorage.result - 0;
+        }
+    }
+    // if Question 7's answer is B
+    else if(item == 16)
+    {
+        document.getElementById("onlineTestBtn7A").style.background="#00bfb6";
+        document.getElementById("onlineTestBtn7B").style.background="#FFBF00";
+        nextBtn7.style.display = "block";
+    }
+
+    // Question 8
+    // if Question 8's answer is A
+    if(item == 17)
+    {
+        document.getElementById("onlineTestBtn8A").style.background="#FFBF00";
+        document.getElementById("onlineTestBtn8B").style.background="#00bfb6";
+        nextBtn8.style.display = "block";
+        // result value
+        if(localStorage.result >= 6)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else if(localStorage == 22)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else
+        {
+            localStorage.result = localStorage.result - 0;
+        }
+    }
+    // if Question 8's answer is B
+    else if(item == 18)
+    {
+        document.getElementById("onlineTestBtn8A").style.background="#00bfb6";
+        document.getElementById("onlineTestBtn8B").style.background="#FFBF00";
+        nextBtn8.style.display = "block";
+    }
+
+    // Question 9
+    // if Question 9's answer is A
+    if(item == 19)
+    {
+        document.getElementById("onlineTestBtn9A").style.background="#FFBF00";
+        document.getElementById("onlineTestBtn9B").style.background="#00bfb6";
+        nextBtn9.style.display = "block";
+        // result value
+        if(localStorage.result >= 4)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else if(localStorage == 22)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else
+        {
+            localStorage.result = localStorage.result - 0;
+        }
+    }
+    // if Question 9's answer is B
+    else if(item == 20)
+    {
+        document.getElementById("onlineTestBtn9A").style.background="#00bfb6";
+        document.getElementById("onlineTestBtn9B").style.background="#FFBF00";
+        nextBtn9.style.display = "block";
+    }
+
+    // Question 10
+    // if Question 10's answer is A
+    if(item == 21)
+    {
+        document.getElementById("onlineTestBtn10A").style.background="#FFBF00";
+        document.getElementById("onlineTestBtn10B").style.background="#00bfb6";
+        submitBtn.style.display = "block";
+        // result value
+        if(localStorage.result >= 2)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else if(localStorage == 22)
+        {
+            localStorage.result = localStorage.result - 2;
+        }
+        else
+        {
+            localStorage.result = localStorage.result - 0;
+        }
+    }
+    // if Question 10's answer is B
+    else if(item == 22)
+    {
+        document.getElementById("onlineTestBtn10A").style.background="#00bfb6";
+        document.getElementById("onlineTestBtn10B").style.background="#FFBF00";
+        submitBtn.style.display = "block";
+    }
+}
+</script>
+
+<script>
+// Set variable of slidenumber as 1
+var slidenumber = 1;
+showDivs(slidenumber);
+
+function change(n)
+{
+    showDivs(slidenumber += n);
+}
+
+// Function of showDivs with onlineTestSlide
+function showDivs(n) 
+{
+  var i;
+  var x = document.getElementsByClassName("onlineTestSlide");
+  if (n > x.length) {slidenumber = 1}    
+  if (n < 1) {slidenumber = x.length};
+  for (i = 0; i < x.length; i++) 
+  {
+     // For Hidden slides
+     x[i].style.display = "none";  
+  }
+  // For Visible slides
+  x[slidenumber-1].style.display = "block";  
+}
+</script>
+
+<script>
+// Function of replacing the page with test result html
+// Confirm dialog for the user to submit answers
+function submit()
+{
+    var confirmDialog = "Are you sure to submit your answers?"
+    var c = confirm(confirmDialog);
+    if(c == true)
+    {
+        window.onbeforeunload = null;
+        location.replace("ptsd_Test_Result.html");
+    }
+}
+</script>
+
+<script>
+// Function of sending alert to the user 
+// to prevent accidently close the browser
+window.onbeforeunload = function () 
+{
+    var alertMsg = "Your answers will not be saved, are you sure you are leaving?";
+    return alertMsg;
+}
+</script>
+
+</body>
+</html>
