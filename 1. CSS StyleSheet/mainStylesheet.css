@@ -286,6 +286,7 @@ body
 /* Footer styling */
 footer
 {
+  padding: 4px;
 	background-color:black;
   position: fixed;
   bottom: 0px;
@@ -431,7 +432,7 @@ button:hover
   background-color: #00bfb6;
   color: #FFFFFF;
   padding: 16px;
-  margin: 20px;
+  margin: 40px;
   opacity: 0.6;
   transition: 0.3s;
 }
@@ -649,12 +650,14 @@ button:hover
     transform: rotate(360deg);
   }
 }
+/* Test score (result) */
 .resultContent
 {
   display: none;
   margin-top: -10px;
   font-size: 24px;
 }
+/* Detected disorder */
 .detectIssue
 {
   display: none;
@@ -663,6 +666,7 @@ button:hover
   font-size: 30px;
   text-decoration: underline;
 }
+/* Solution/advices content */
 .solution
 {
   display: none;
@@ -671,13 +675,14 @@ button:hover
   font-size: 18px;
   text-align: left;
 }
+/* Solution titles */
 .solutionTitle
 {
   font-size: 22px;
   font-weight: 500;
   color: #4CAF50;
 }
-/* Online Test screen styling */
+/* Online Test result screen styling */
 @media screen and (max-width:750px)
 {
   .solution
