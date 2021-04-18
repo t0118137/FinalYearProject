@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Answers | Mental Health Measures HK</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="1. CSS StyleSheet/mainStylesheet.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+<!-- Logo -->
+<div><a href="index.html" target="_blank"><img border="0" src="2. Images/icon.png" width="350px" height="155px"></a></div>
+
+<div class="colourBar"></div>
+
+<p class="un" style="text-align: center; font-size: 32px; color: #000000;">Anxiety Test Answers Review</p>
+
+<!-- Loading screen -->
+<div class="w3-center">
+    <div class="lds-roller" id="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+</div>
+
+<div class="reviewContent" id="reviewContent">
+    <!-- Q&A review 1 -->
+    <div class="qNaReview">
+        <p class="questionReview">
+            Q1. If you have to rate yourself, how deep do you 
+            think you have participated in the movement?
+        </p>
+        <p class="answerReview" id="answerReview1"></p>
+    </div><br>
+
+    <!-- Q&A review 2 -->
+    <div class="qNaReview">
+        <p class="questionReview">
+            Q2. Have you ever experienced any kinds of police 
+            brutality (e.g. Pepper sprayed, got beaten)?
+        </p>
+        <p class="answerReview" id="answerReview2"></p>
+    </div><br>
+
+    <!-- Q&A review 3 -->
+    <div class="qNaReview">
+        <p class="questionReview">
+            Q3. Did you ever be arrested because of the 2019 movement?
+        </p>
+        <p class="answerReview" id="answerReview3"></p>
+    </div><br>
+
+    <!-- Q&A review 4 -->
+    <div class="qNaReview">
+        <p class="questionReview">
+            Q4. Do you agree that you are always feeling restlessness?
+        </p>
+        <p class="answerReview" id="answerReview4"></p>
+    </div><br>
+
+    <!-- Q&A review 5 -->
+    <div class="qNaReview">
+        <p class="questionReview">
+            Q5. Do you agree that concentrating is difficult for you?
+        </p>
+        <p class="answerReview" id="answerReview5"></p>
+    </div><br>
+
+    <!-- Q&A review 6 -->
+    <div class="qNaReview">
+        <p class="questionReview">
+            Q6. Which negative feeling below you have ever 
+            experienced during the 2019 movement? 
+            (Please select the most affecting one)
+        </p>
+        <p class="answerReview" id="answerReview6"></p>
+    </div><br>
+
+    <!-- Q&A review 7 -->
+    <div class="qNaReview">
+        <p class="questionReview">
+            Q7. Are you constantly being worried about different things?
+        </p>
+        <p class="answerReview" id="answerReview7"></p>
+    </div><br>
+
+    <!-- Q&A review 8 -->
+    <div class="qNaReview">
+        <p class="questionReview">
+            Q8. Are you constantly being scared that something terrible 
+            might happen to you? (such as getting arrested someday)
+        </p>
+        <p class="answerReview" id="answerReview8"></p>
+    </div><br>
+
+    <!-- Q&A review 9 -->
+    <div class="qNaReview">
+        <p class="questionReview">
+            Q9. Do you agree that you are always being nervous?
+        </p>
+        <p class="answerReview" id="answerReview9"></p>
+    </div><br>
+
+    <!-- Q&A review 10 -->
+    <div class="qNaReview">
+        <p class="questionReview">
+            Q10. Do you agree that the 2019 movement is the main reason of 
+            your mental health disorder symptoms?
+        </p>
+        <p class="answerReview" id="answerReview10"></p>
+    </div><br>
+
+    <br><br>
+    <div class="btnArea">
+        <button class="redoBtn" onclick="redoAgain()">Redo Again</button>
+        <button class="submitBtn" onclick="submitAnswers()">Submit</button>
+    </div>
+</div>
+
+<br><br><br><br>
+<div class="colourBar"></div>
+
+<br><br><br><br><br><br><br>
+<footer>
+    <div class="w3-row"> 
+    <div class="w3-rest w3-bar w3-black">
+     <div style="color:white;text-align:center;">
+       &nbsp;<un>Student Number : T0118137</un> &nbsp;&nbsp;&nbsp; 
+       <un>University Email : T0118137@my.ntu.ac.uk</un> &nbsp;&nbsp;&nbsp; 
+       <un>Personal Email : 9LDSKING@gmail.com</un>
+     </div>
+    </div></div>
+    <div style="color:yellow">&copy; Copyright Ho Hin Ng Percy</div>
+</footer>
+
+<!-- JavaScript -->
+<script>
+// Animation timeset for roller
+setTimeout(function() 
+{
+    $('#lds-roller').fadeOut('slow');
+}, 3500);
+        
+// Animation timeset for main content
+setTimeout(function() 
+{
+    $('#reviewContent').fadeIn('slow');
+}, 4000);
+</script>
+
+<script>
+// Print the result from localStorage
+document.getElementById('answerReview1').innerHTML = "A1) " + localStorage.answerReview1;
+document.getElementById('answerReview2').innerHTML = "A2) " + localStorage.answerReview2;
+document.getElementById('answerReview3').innerHTML = "A3) " + localStorage.answerReview3;
+document.getElementById('answerReview4').innerHTML = "A4) " + localStorage.answerReview4;
+document.getElementById('answerReview5').innerHTML = "A5) " + localStorage.answerReview5;
+document.getElementById('answerReview6').innerHTML = "A6) " + localStorage.answerReview6;
+document.getElementById('answerReview7').innerHTML = "A7) " + localStorage.answerReview7;
+document.getElementById('answerReview8').innerHTML = "A8) " + localStorage.answerReview8;
+document.getElementById('answerReview9').innerHTML = "A9) " + localStorage.answerReview9;
+document.getElementById('answerReview10').innerHTML = "A10) " + localStorage.answerReview10;
+</script>
+
+<script>
+// Function for user to redo the test
+// Confirm dialog for the user to confirm if they really want to redo the test
+function redoAgain()
+{   
+    if(!confirm("Do you really want to do the test again?")) 
+    {
+        return false;
+    }
+    window.localStorage.clear();
+    window.onbeforeunload = null;
+    location.replace("anxiety_Test.html");
+}
+// Function of replacing the page with test result html
+// Confirm dialog for the user to submit answers
+function submitAnswers()
+{
+    if(!confirm("Are you ready to submit?")) 
+    {
+        return false;
+    }
+    window.onbeforeunload = null;
+    location.replace("anxiety_Test_Result.html");
+}
+</script>
+
+<script>
+// Function of sending alert to the user 
+// to prevent accidently close the browser
+window.onbeforeunload = function () 
+{
+    var alertMsg = "Your answers will not be saved, are you sure you are leaving?";
+    return alertMsg;
+}
+</script>
+
+</body>
+</html>

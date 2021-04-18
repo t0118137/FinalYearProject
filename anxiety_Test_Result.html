@@ -36,7 +36,7 @@
     <p class="detectIssue" id="detectIssue1" style="color: #DC143C">Panic Level Anxiety</p>
     <p class="detectIssue" id="detectIssue2" style="color: #FF8C00">Severe Anxiety</p>
     <p class="detectIssue" id="detectIssue3" style="color: #1E90FF">Moderate Anxiety</p>
-    <p class="detectIssue" id="detectIssue4" style="color: #32CD32">Mild Anxiety</p>
+    <p class="detectIssue" id="detectIssue4" style="color: #32CD32">None or Mild Anxiety</p>
 
     <!-- Test Result -->
     <p class="resultContent" id="resultContent"></p>
@@ -45,7 +45,7 @@
     <!-- Panic Level Anxiety -->
     <div class="solution" id="solution1">
         <p class="solutionContent">
-            <p class="solutionTitle" style="font-size: 26px">Test Result 0 - 4: Panic Level Anxiety</p>
+            <p class="solutionTitle" style="font-size: 26px">Test Result 0 - 5: Panic Level Anxiety</p>
             <p class="solutionTitle">Possible Symptoms:</p>
             -	Rapid onset of extreme fear<br>
             -	Heart palpitations<br>
@@ -67,7 +67,7 @@
     <!-- Severe Anxiety -->
     <div class="solution" id="solution2">
         <p class="solutionContent">
-            <p class="solutionTitle" style="font-size: 26px">Test Result 5 - 10: Severe Anxiety</p>
+            <p class="solutionTitle" style="font-size: 26px">Test Result 6 - 12: Severe Anxiety</p>
             <p class="solutionTitle">Possible Symptoms:</p>
             -	Feeling nervous, restless or tense<br>
             -	Feeling weak or tired<br>
@@ -88,7 +88,7 @@
     <!-- Moderate Anxiety -->
     <div class="solution" id="solution3">
         <p class="solutionContent">
-            <p class="solutionTitle" style="font-size: 26px">Test Result 11 - 16: Moderate Anxiety</p>
+            <p class="solutionTitle" style="font-size: 26px">Test Result 13 - 20: Moderate Anxiety</p>
             <p class="solutionTitle">Possible Symptoms:</p>
             -	Sweating<br>
             -	Trembling<br>
@@ -110,7 +110,7 @@
     <!-- Mild Anxiety -->
     <div class="solution" id="solution4">
         <p class="solutionContent">
-            <p class="solutionTitle" style="font-size: 26px">Test Result 17 - 22: Mild Anxiety</p>
+            <p class="solutionTitle" style="font-size: 26px">Test Result 21 - 30: None or Mild Anxiety</p>
             <p class="solutionTitle">Possible Symptoms:</p>
             -	Feeling nervous<br>
             -	Having trouble sleeping<br>
@@ -203,16 +203,15 @@ window.onload = function()
 </script>
 
 <script>
-if(localStorage.result >= 0 && localStorage.result <= 4)
+if(localStorage.result >= 0 && localStorage.result <= 5)
 {
     setTimeout(function() 
     {
         $('#detectIssue1').fadeIn('slow');
-        $('#disorderPic1').fadeIn('slow');
         $('#solution1').fadeIn('slow');
     }, 5500);
 }
-else if(localStorage.result >= 5 && localStorage.result <= 10)
+else if(localStorage.result >= 6 && localStorage.result <= 12)
 {
     setTimeout(function() 
     {
@@ -220,7 +219,7 @@ else if(localStorage.result >= 5 && localStorage.result <= 10)
         $('#solution2').fadeIn('slow');
     }, 5500);
 }
-else if(localStorage.result >= 11 && localStorage.result <= 16)
+else if(localStorage.result >= 13 && localStorage.result <= 20)
 {
     setTimeout(function() 
     {
@@ -228,7 +227,7 @@ else if(localStorage.result >= 11 && localStorage.result <= 16)
         $('#solution3').fadeIn('slow');
     }, 5500);
 }
-else if(localStorage.result >= 17 && localStorage.result <= 22)
+else if(localStorage.result >= 21 && localStorage.result <= 30)
 {
     setTimeout(function() 
     {
@@ -240,7 +239,7 @@ else if(localStorage.result >= 17 && localStorage.result <= 22)
 
 <script>
 // Print the result from localStorage
-document.getElementById('resultContent').innerHTML = "Your test result is " + localStorage.result + "/22.";
+document.getElementById('resultContent').innerHTML = "Your test result is " + localStorage.result + "/30.";
 window.localStorage.clear();
 </script>
 

@@ -36,7 +36,7 @@
     <p class="detectIssue" id="detectIssue1" style="color: #DC143C">Major Phobia</p>
     <p class="detectIssue" id="detectIssue2" style="color: #FF8C00">Severe Phobia</p>
     <p class="detectIssue" id="detectIssue3" style="color: #1E90FF">Moderate Phobia</p>
-    <p class="detectIssue" id="detectIssue4" style="color: #32CD32">Mild Phobia</p>
+    <p class="detectIssue" id="detectIssue4" style="color: #32CD32">None or Mild Phobia</p>
 
     <!-- Test Result -->
     <p class="resultContent" id="resultContent"></p>
@@ -45,7 +45,7 @@
     <!-- Panic Level Depression -->
     <div class="solution" id="solution1">
         <p class="solutionContent">
-            <p class="solutionTitle" style="font-size: 26px">Test Result 0 - 4: Major Phobia</p>
+            <p class="solutionTitle" style="font-size: 26px">Test Result 0 - 5: Critial Phobia</p>
             <p class="solutionTitle">Possible Symptoms:</p>
             -	Hot flashes or chills<br>
             -	Rapid heartbeat<br>
@@ -60,7 +60,7 @@
             -	Beta-blockers<br>
             <br>
             <p class="solutionTitle">Advices:</p>
-            Major Phobia could be severe since it could lead 
+            Critial Phobia could be severe since it could lead 
             people to attempt self-destructive behaviors or suicide, <br>
             it is the most severe phobia disorder.<br>
             The most useful treaments would be having the combination <br>
@@ -71,7 +71,7 @@
     <!-- Severe Depression -->
     <div class="solution" id="solution2">
         <p class="solutionContent">
-            <p class="solutionTitle" style="font-size: 26px">Test Result 5 - 10: Severe Phobia</p>
+            <p class="solutionTitle" style="font-size: 26px">Test Result 6 - 12: Severe Phobia</p>
             <p class="solutionTitle">Possible Symptoms:</p>
             -	Hot flashes or chills<br>
             -	Rapid heartbeat<br>
@@ -93,7 +93,7 @@
     <!-- Moderate Depression -->
     <div class="solution" id="solution3">
         <p class="solutionContent">
-            <p class="solutionTitle" style="font-size: 26px">Test Result 11 - 16: Moderate Phobia</p>
+            <p class="solutionTitle" style="font-size: 26px">Test Result 13 - 20: Moderate Phobia</p>
             <p class="solutionTitle">Possible Symptoms:</p>
             -	Rapid heartbeat<br>
             -	Feeling nausea frequently<br>
@@ -117,7 +117,7 @@
     <!-- Mild Depression -->
     <div class="solution" id="solution4">
         <p class="solutionContent">
-            <p class="solutionTitle" style="font-size: 26px">Test Result 17 - 22: Mild Phobia</p>
+            <p class="solutionTitle" style="font-size: 26px">Test Result 21 - 30: None or Mild Phobia</p>
             <p class="solutionTitle">Possible Symptoms:</p>
             -	Rapid heartbeat<br>
             -   Sweating<br>
@@ -210,7 +210,7 @@ window.onload = function()
 </script>
 
 <script>
-if(localStorage.result >= 0 && localStorage.result <= 4)
+if(localStorage.result >= 0 && localStorage.result <= 5)
 {
     setTimeout(function() 
     {
@@ -219,7 +219,7 @@ if(localStorage.result >= 0 && localStorage.result <= 4)
         $('#solution1').fadeIn('slow');
     }, 5500);
 }
-else if(localStorage.result >= 5 && localStorage.result <= 10)
+else if(localStorage.result >= 6 && localStorage.result <= 12)
 {
     setTimeout(function() 
     {
@@ -227,7 +227,7 @@ else if(localStorage.result >= 5 && localStorage.result <= 10)
         $('#solution2').fadeIn('slow');
     }, 5500);
 }
-else if(localStorage.result >= 11 && localStorage.result <= 16)
+else if(localStorage.result >= 13 && localStorage.result <= 20)
 {
     setTimeout(function() 
     {
@@ -235,7 +235,7 @@ else if(localStorage.result >= 11 && localStorage.result <= 16)
         $('#solution3').fadeIn('slow');
     }, 5500);
 }
-else if(localStorage.result >= 17 && localStorage.result <= 22)
+else if(localStorage.result >= 21 && localStorage.result <= 30)
 {
     setTimeout(function() 
     {
@@ -247,7 +247,7 @@ else if(localStorage.result >= 17 && localStorage.result <= 22)
 
 <script>
 // Print the result from localStorage
-document.getElementById('resultContent').innerHTML = "Your test result is " + localStorage.result + "/22.";
+document.getElementById('resultContent').innerHTML = "Your test result is " + localStorage.result + "/30.";
 window.localStorage.clear();
 </script>
 
