@@ -699,3 +699,9 @@ button:hover
 {
   font-weight: 550;
 }
+.slideNum
+{
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+}
