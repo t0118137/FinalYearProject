@@ -19,8 +19,8 @@
 <!-- Question 1 -->
 <div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
-        1. If you have to rate yourself, how deep do you 
-        think you have participated in the movement?
+        1. How much of your mental capacity did you use towards 
+        supporting the 2019 protest movement?
     </div>
     
     <div class="btnArea">
@@ -35,8 +35,8 @@
 <!-- Question 2 -->
 <div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
-        2. Have you ever experienced any kinds of police 
-        brutality (e.g. Pepper sprayed, got beaten)?
+        2. Have you ever experienced any police brutality 
+        (e.g. Pepper sprayed, being beaten)?
     </div>
     
     <div class="btnArea">
@@ -49,7 +49,7 @@
 <!-- Question 3 -->
 <div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
-        3. Did you ever be arrested because of the 2019 movement?
+        3. Have you ever been arrested because of the 2019 movement?
     </div>
     
     <div class="btnArea">
@@ -62,12 +62,12 @@
 <!-- Question 4 -->
 <div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
-        4. Do you agree that you are always feeling restlessness?
+        4. Are you always restless?
     </div>
     
     <div class="btnArea">
-        <button class="onlineTestBtn" id="onlineTestBtn4A" onclick="score(9); change(+1);">A. Agree</button>
-        <button class="onlineTestBtn" id="onlineTestBtn4B" onclick="score(10); change(+1);">B. Disagree</button>
+        <button class="onlineTestBtn" id="onlineTestBtn4A" onclick="score(9); change(+1);">A. Yes</button>
+        <button class="onlineTestBtn" id="onlineTestBtn4B" onclick="score(10); change(+1);">B. No</button>
     </div><br><br>
     <p class="slideNum">4/10</p>
 </div>
@@ -75,12 +75,12 @@
 <!-- Question 5 -->
 <div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
-        5. Do you agree that concentrating is difficult for you?
+        5. Do you find it difficult to concentrate?
     </div>
     
     <div class="btnArea">
-        <button class="onlineTestBtn" id="onlineTestBtn5A" onclick="score(11); change(+1);">A. Agree</button>
-        <button class="onlineTestBtn" id="onlineTestBtn5B" onclick="score(12); change(+1);">B. Disgree</button>
+        <button class="onlineTestBtn" id="onlineTestBtn5A" onclick="score(11); change(+1);">A. Yes</button>
+        <button class="onlineTestBtn" id="onlineTestBtn5B" onclick="score(12); change(+1);">B. No</button>
     </div><br><br>
     <p class="slideNum">5/10</p>
 </div>
@@ -88,8 +88,8 @@
 <!-- Question 6 -->
 <div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
-        6. Which negative feeling below you have ever 
-        experienced during the 2019 movement? 
+        6. Which of the following describes 
+        you best during the 2019 movement?
         (Please select the most affecting one)
     </div>
     
@@ -103,7 +103,7 @@
 <!-- Question 7 -->
 <div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
-        7. Are you constantly being worried about different things?
+        7. Are you constantly worried about different things?
     </div>
     
     <div class="btnArea">
@@ -117,7 +117,7 @@
 <!-- PTSD's symptom -->
 <div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
-        8. Are you constantly being scared that something terrible 
+        8. Are you constantly scared that something terrible 
         might happen to you? (such as getting arrested someday)
     </div>
     
@@ -131,7 +131,7 @@
 <!-- Question 9 -->
 <div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
-        9. Do you agree that you are always being nervous?
+        9. Do you agree that you are always nervous?
     </div>
     
     <div class="btnArea">
@@ -145,8 +145,8 @@
 <!-- Summary Question -->
 <div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
-        10. Do you agree that the 2019 movement is the main reason of 
-        your mental health disorder symptoms?
+        10. Do you agree that the 2019 movement is the 
+        main reason contributing to your mental health disorder symptoms?
     </div>
     
     <div class="btnArea">
@@ -245,13 +245,13 @@ function score(item)
     // if Question 4's answer is A
     if(item == 9)
     {
-        localStorage.answerReview4 = "A. Agree";
+        localStorage.answerReview4 = "A. Yes";
         localStorage.result = localStorage.result - 4;
     }
     // if Question 4's answer is B
     else if(item == 10)
     {
-        localStorage.answerReview4 = "B. Disagree";
+        localStorage.answerReview4 = "B. No";
         localStorage.result = localStorage.result - 0;
     }
 
@@ -259,13 +259,13 @@ function score(item)
     // if Question 5's answer is A
     if(item == 11)
     {
-        localStorage.answerReview5 = "A. Agree";
+        localStorage.answerReview5 = "A. Yes";
         localStorage.result = localStorage.result - 2;
     }
     // if Question 5's answer is B
     else if(item == 12)
     {
-        localStorage.answerReview5 = "B. Disagree";
+        localStorage.answerReview5 = "B. No";
         localStorage.result = localStorage.result - 0;
     }
 
