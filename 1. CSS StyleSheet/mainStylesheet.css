@@ -680,13 +680,14 @@ button:hover
   opacity: 1;
   border-radius: 40px;
 }
-/* Online Test redo and submit button hover*/
+/* Online Test redo and submit button hover */
 .redoBtn:hover,
 .submitBtn:hover
 {
   border: 1px solid;
   font-weight: 500;
 }
+/* Answers Review */
 .reviewContent 
 {
   display: none;
@@ -701,12 +702,14 @@ button:hover
 {
   font-weight: 550;
 }
+/* Adding number styling for slides */
 .slideNum
 {
   text-align: center;
   font-weight: 500;
   font-size: 16px;
 }
+/* Reference part in AboutUs */
 .ref
 {
   padding: 14px;
@@ -716,10 +719,12 @@ button:hover
   font-weight: 500; 
   font-size: 18px;
 }
+/* Reference links in AboutUs */
 .links:hover
 {
   color: #4CAF50; 
 }
+/* White colour bar */
 .colourBar2
 {
   content: '';
