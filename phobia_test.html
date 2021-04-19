@@ -14,7 +14,31 @@
 
 <div class="colourBar"></div>
 
-<p class="warning">*Reminder: Once you have selected an answer, you won't be able to change it unless re-doing the online test!</p>
+<p class="warning" id="warning">*Reminder: Once you have selected an answer, you won't be able to change it unless re-doing the online test!</p>
+
+<!-- Disclaimer -->
+<div class="onlineTestSlide fade">
+    <div class="w3-center" style="font-size: 16px; margin: 40px; padding: 10 20px;">
+        <div style="font-size: 20px; font-weight: 500; text-decoration: underline;">
+          Disclaimer
+        </div>
+        <br>
+        The tests are designed for people  <br>
+        who have participated in the 2019 Anti-Extradition Law Movement <br>
+        in Hong Kong, otherwise the results may not be accurate in <br>
+        reflecting your mental health. <br><br>
+        This website does not require any personal details and will <br>
+        provide the mental health test results automatically. <br>
+        The test results are only for reference, <br>
+        please seek professional advice if the tests suggest that you are <br>
+        suffering from signs and symptoms of mental conditions.<br>
+      </div><br>
+
+      <div class="btnArea">
+          <button class="returnBtn" onclick="back()">Return</button>
+          <button class="agreeBtn" onclick="change(+1); displayWarning();">Continue</button>
+      </div>
+</div>
 
 <!-- Question 1 -->
 <div class="onlineTestSlide fade">
@@ -370,6 +394,20 @@ function showDivs(n)
 </script>
 
 <script>
+// Function for displaying warning
+function displayWarning() 
+{
+    document.getElementById("warning").style.display = "block";
+}
+</script>
+
+<script>
+// Function when the user want to get back to selection
+function back()
+{
+    window.onbeforeunload = null;
+    location.replace("5. Online_Test.html");
+}
 // Function of replacing the page with test review
 function submit()
 {

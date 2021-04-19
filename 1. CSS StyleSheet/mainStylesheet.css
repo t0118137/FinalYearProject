@@ -642,14 +642,15 @@ button:hover
 }
 .warning
 {
-  display: flex;
+  display: none;
   font-weight: 450;
   margin-left: 20px;
   padding: 14px;
   font-size: 16px;
 }
 /* Online Test review redo button */
-.redoBtn
+.redoBtn,
+.returnBtn
 {
   position: absolute;
   left: 30px;
@@ -664,7 +665,8 @@ button:hover
   border-radius: 40px;
 }
 /* Online Test review submitting button */
-.submitBtn
+.submitBtn,
+.agreeBtn
 {
   position: absolute;
   right: 30px;
