@@ -87,12 +87,12 @@
 <!-- Question 4 -->
 <div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
-        4. Do you agree that you are always sweating or trembling? 
+        4. Do you suffer from excessive sweating and trembling without reason?
     </div>
     
     <div class="btnArea">
-        <button class="onlineTestBtn" id="onlineTestBtn4A" onclick="score(9); change(+1);">A. Agree</button>
-        <button class="onlineTestBtn" id="onlineTestBtn4B" onclick="score(10); change(+1);">B. Disagree</button>
+        <button class="onlineTestBtn" id="onlineTestBtn4A" onclick="score(9); change(+1);">A. Yes</button>
+        <button class="onlineTestBtn" id="onlineTestBtn4B" onclick="score(10); change(+1);">B. No</button>
     </div><br><br>
     <p class="slideNum">4/10</p>
 </div>
@@ -100,13 +100,12 @@
 <!-- Question 5 -->
 <div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
-        5. Do you agree that you are always having 
-        confusion or disorientation?
+        5. Do you feel confused or disorientated all the time? 
     </div>
     
     <div class="btnArea">
-        <button class="onlineTestBtn" id="onlineTestBtn5A" onclick="score(11); change(+1);">A. Agree</button>
-        <button class="onlineTestBtn" id="onlineTestBtn5B" onclick="score(12); change(+1);">B. Disgree</button>
+        <button class="onlineTestBtn" id="onlineTestBtn5A" onclick="score(11); change(+1);">A. Yes</button>
+        <button class="onlineTestBtn" id="onlineTestBtn5B" onclick="score(12); change(+1);">B. No</button>
     </div><br><br>
     <p class="slideNum">5/10</p>
 </div>
@@ -129,7 +128,7 @@
 <!-- Question 7 -->
 <div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
-        7. Are you constantly having rapid heartbeat?
+        7. Do you suffer from frequent palpitations (rapid heartbeats) or irregular heartbeats?
     </div>
     
     <div class="btnArea">
@@ -156,12 +155,12 @@
 <!-- Question 9 -->
 <div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
-        9. Do you agree that you are having panic attacks frequently?
+        9. Do you suffer from panic attacks frequently?
     </div>
     
     <div class="btnArea">
-        <button class="onlineTestBtn" id="onlineTestBtn9A" onclick="score(19); change(+1);">A. Agree</button>
-        <button class="onlineTestBtn" id="onlineTestBtn9B" onclick="score(20); change(+1);">B. Disagree</button>
+        <button class="onlineTestBtn" id="onlineTestBtn9A" onclick="score(19); change(+1);">A. Yes</button>
+        <button class="onlineTestBtn" id="onlineTestBtn9B" onclick="score(20); change(+1);">B. No</button>
     </div><br><br>
     <p class="slideNum">9/10</p>
 </div>
@@ -271,13 +270,13 @@ function score(item)
     // if Question 4's answer is A
     if(item == 9)
     {
-        localStorage.answerReview4 = "A. Agree";
+        localStorage.answerReview4 = "A. Yes";
         localStorage.result = localStorage.result - 4;
     }
     // if Question 4's answer is B
     else if(item == 10)
     {
-        localStorage.answerReview4 = "B. Disagree";
+        localStorage.answerReview4 = "B. No";
         localStorage.result = localStorage.result - 0;
     }
 
@@ -285,13 +284,13 @@ function score(item)
     // if Question 5's answer is A
     if(item == 11)
     {
-        localStorage.answerReview5 = "A. Agree";
+        localStorage.answerReview5 = "A. Yes";
         localStorage.result = localStorage.result - 2;
     }
     // if Question 5's answer is B
     else if(item == 12)
     {
-        localStorage.answerReview5 = "B. Disagree";
+        localStorage.answerReview5 = "B. No";
         localStorage.result = localStorage.result - 0;
     }
 
@@ -341,13 +340,13 @@ function score(item)
     // if Question 9's answer is A
     if(item == 19)
     {
-        localStorage.answerReview9 = "A. Agree";
+        localStorage.answerReview9 = "A. Yes";
         localStorage.result = localStorage.result - 4;
     }
     // if Question 9's answer is B
     else if(item == 20)
     {
-        localStorage.answerReview9 = "B. Disagree";
+        localStorage.answerReview9 = "B. No";
         localStorage.result = localStorage.result - 0;
     }
 

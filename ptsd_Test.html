@@ -87,13 +87,12 @@
 <!-- Question 4 -->
 <div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
-        4. Do you agree that you are having flashbacks or 
-        nightmares frequently?
+        4. Do you experience flashbacks or nightmares frequently?
     </div>
     
     <div class="btnArea">
-        <button class="onlineTestBtn" id="onlineTestBtn4A" onclick="score(9); change(+1);">A. Agree</button>
-        <button class="onlineTestBtn" id="onlineTestBtn4B" onclick="score(10); change(+1);">B. Disagree</button>
+        <button class="onlineTestBtn" id="onlineTestBtn4A" onclick="score(9); change(+1);">A. Yes</button>
+        <button class="onlineTestBtn" id="onlineTestBtn4B" onclick="score(10); change(+1);">B. No</button>
     </div><br><br>
     <p class="slideNum">4/10</p>
 </div>
@@ -101,13 +100,13 @@
 <!-- Question 5 -->
 <div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
-        5. Do you agree that you are currently emotional 
-        numbing to a lot of things?
+        5. Do you feel emotionally numb in response 
+        to significant events?
     </div>
     
     <div class="btnArea">
-        <button class="onlineTestBtn" id="onlineTestBtn5A" onclick="score(11); change(+1);">A. Agree</button>
-        <button class="onlineTestBtn" id="onlineTestBtn5B" onclick="score(12); change(+1);">B. Disgree</button>
+        <button class="onlineTestBtn" id="onlineTestBtn5A" onclick="score(11); change(+1);">A. Yes</button>
+        <button class="onlineTestBtn" id="onlineTestBtn5B" onclick="score(12); change(+1);">B. No</button>
     </div><br><br>
     <p class="slideNum">5/10</p>
 </div>
@@ -130,7 +129,7 @@
 <!-- Question 7 -->
 <div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
-        7. Are you constantly watchful or easily shocked?
+        7. Are you constantly (over-)watchful or easily scared?
     </div>
     
     <div class="btnArea">
@@ -144,8 +143,8 @@
 <!-- PTSD's symptom -->
 <div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
-        8. Are you constantly feeling guilty or 
-        keep blaming on different things?
+        8. Do you constantly feel guilty or would lay blame 
+        on others for negative things that had happened?
     </div>
     
     <div class="btnArea">
@@ -158,13 +157,13 @@
 <!-- Question 9 -->
 <div class="onlineTestSlide fade">
     <div class="onlineTestQuestion">
-        9. Do you agree that you are always upset 
-        because of the experiences of police brutality?
+        9. Are you always upset because of your 
+        experiences of police brutality?
     </div>
     
     <div class="btnArea">
-        <button class="onlineTestBtn" id="onlineTestBtn9A" onclick="score(19); change(+1);">A. Agree</button>
-        <button class="onlineTestBtn" id="onlineTestBtn9B" onclick="score(20); change(+1);">B. Disagree</button>
+        <button class="onlineTestBtn" id="onlineTestBtn9A" onclick="score(19); change(+1);">A. Yes</button>
+        <button class="onlineTestBtn" id="onlineTestBtn9B" onclick="score(20); change(+1);">B. No</button>
     </div><br><br>
     <p class="slideNum">9/10</p>
 </div>
@@ -274,13 +273,13 @@ function score(item)
     // if Question 4's answer is A
     if(item == 9)
     {
-        localStorage.answerReview4 = "A. Agree";
+        localStorage.answerReview4 = "A. Yes";
         localStorage.result = localStorage.result - 4;
     }
     // if Question 4's answer is B
     else if(item == 10)
     {
-        localStorage.answerReview4 = "B. Disagree";
+        localStorage.answerReview4 = "B. No";
         localStorage.result = localStorage.result - 0;
     }
 
@@ -288,13 +287,13 @@ function score(item)
     // if Question 5's answer is A
     if(item == 11)
     {
-        localStorage.answerReview5 = "A. Agree";
+        localStorage.answerReview5 = "A. Yes";
         localStorage.result = localStorage.result - 2;
     }
     // if Question 5's answer is B
     else if(item == 12)
     {
-        localStorage.answerReview5 = "B. Disagree";
+        localStorage.answerReview5 = "B. No";
         localStorage.result = localStorage.result - 0;
     }
 
@@ -344,13 +343,13 @@ function score(item)
     // if Question 9's answer is A
     if(item == 19)
     {
-        localStorage.answerReview9 = "A. Agree";
+        localStorage.answerReview9 = "A. Yes";
         localStorage.result = localStorage.result - 4;
     }
     // if Question 9's answer is B
     else if(item == 20)
     {
-        localStorage.answerReview9 = "B. Disagree";
+        localStorage.answerReview9 = "B. No";
         localStorage.result = localStorage.result - 0;
     }
 
